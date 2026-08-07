@@ -1,5 +1,4 @@
-# ROBIS-Lab
-Robotics and Intelligence System Lab from Faculty of Applied Sciences, Macao Polytechnic University
+# Coordination Core-Ligand Collaborative Optimizer (CLCO)
 
 The code of Coordination Core-Ligand Collaborative Optimizer (CLCO) will be uploaded before 2026.08.10.
 
