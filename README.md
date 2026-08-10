@@ -1,6 +1,7 @@
 # Coordination Core-Ligand Collaborative Optimizer (CLCO)
 
-The code of Coordination Core-Ligand Collaborative Optimizer (CLCO) will be uploaded before 2026.08.10.
+The code of Coordination Core-Ligand Collaborative Optimizer (CLCO) was uploaded.
+See CLCO-main.zip
 
 CITATION:
 @article{li2026coordination,
