@@ -30,3 +30,16 @@
 本轮核对 15 个关键外部链接：13 个返回 HTTP 200；两条 IEEE DOI 成功解析到 IEEE Xplore，并返回 HTTP 202（站点的访问处理响应）。这两篇的标题、作者、年份与 venue 另用校方页面和 Crossref 元数据核对，不将 202 解释为论文失效或全文已获取。
 
 包括三个 arXiv、CLCO/DHCRWOA/KnowLCP DOI、ACL HyperFM、四位成员主页、MPU 官网与实际 CLCO 代码分支。全部保留正确论文入口。没有给未提供公开主页的学生添加虚构链接。
+
+## 首次线上部署与核验
+
+- 源码提交：`2440efb9ff3a5d5bb7e02090688c48612c5eaf2f`。
+- Actions：https://github.com/JunhaoWei-mpu/ROBIS-Lab/actions/runs/39390653761 ，build 与 deploy 均 success。
+- 部署 ID：`7194670718`，GitHub deployments status 为 success；环境返回实际地址：https://junhaowei-mpu.github.io/ROBIS-Lab/ 。
+- Pages API 确认 `build_type: workflow`、HTTPS enforced；没有并用分支发布。
+- 线上 HTTP 核对首页、全部一级页面、Long Liu/Jiangyu Lai、三个项目页、sitemap 和 404 共 14 个地址，均 HTTP 200。不存在地址另验为 HTTP 404，并显示本站自定义 404 内容。
+- 线上页面引用的 21 个 CSS/JS/图像资源全部 HTTP 200，SHA-256 与本地构建资源一致。
+- 真实 Chrome 再次访问线上 Home / People / Platforms 并保存截图，图像完整加载，控制台无错误。手机菜单 → People → Long Liu 的跳转与线上 SAGA 搜索通过。
+- 线上截图位于 `../robis-preview/online-home-1440.png`、`online-people-1440.png`、`online-platforms-1440.png`。
+
+本记录补充属于维护文档变更，文件本身不进入站点产物；对应后续提交的 Actions 状态可在仓库 Actions 查看。
