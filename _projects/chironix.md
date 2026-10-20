@@ -23,6 +23,6 @@ The project documentation reports hardware validation of the teleoperation data 
 
 The D1 dual-arm work unit and M1 mobile lifting platform are undergoing modular refinement. Mechanical, power, and communication quick-change interfaces, together with automatic joint calibration, remain in development.
 
-Imitation learning, diffusion policies, and VLA methods are research directions for the demonstration pipeline. The current platform description does not imply that every proposed policy has completed training or physical deployment.
+The demonstration pipeline supports ongoing research in imitation learning, diffusion policies, and VLA methods.
 
 <div class="text-links"><a href="{{ '/platforms/#chironix' | relative_url }}">Hardware overview →</a><a href="{{ '/research/#manipulation' | relative_url }}">Manipulation research →</a><a href="{{ '/people/' | relative_url }}">Meet the team →</a></div>

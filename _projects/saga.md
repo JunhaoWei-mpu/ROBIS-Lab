@@ -3,6 +3,12 @@ title: SAGA
 category: Autonomous aerial navigation
 publication: saga
 description: A self-attention and goal-aware anchor-based planner for UAV navigation in cluttered environments.
+home_summary: Depth-based UAV motion planning with self-attention across motion anchors and goal-aware trajectory
+  selection.
+home_image: /assets/images/projects/saga-framework.webp
+home_image_width: 1647
+home_image_height: 808
+home_image_alt: SAGA motion planning architecture from the published preprint
 ---
 {% include figure.html image='/assets/images/projects/saga-framework.webp' width=1647 height=808 alt='Published SAGA architecture with anchor-aligned feature encoding, self-attention, goal modulation, and trajectory decoding' caption='SAGA architecture. Source: Wei et al., arXiv:2605.02301, Figure 1.' %}
 
@@ -18,6 +24,6 @@ Polar positional encoding retains directional structure. Goal-aware modulation i
 
 ## Evaluation setting
 
-The paper reports evaluations in cluttered pillar-map environments and comparisons with planning baselines and an ablation without polar positional encoding. The project page summarizes the research method; it does not attribute the reported results to the physical UAVs pictured on this website.
+The paper reports evaluations in cluttered pillar-map environments and comparisons with planning baselines and an ablation without polar positional encoding.
 
 <div class="text-links"><a href="{{ '/research/#aerial' | relative_url }}">Aerial robotics →</a><a href="{{ '/publications/#kio-planner' | relative_url }}">Related work: KIO-planner →</a></div>

@@ -1,24 +1,25 @@
-<div class="institution-bar">
-<div class="container institution-inner">
-<span>Robotics and Intelligent Systems Lab</span>
-<a href="https://www.mpu.edu.mo/" aria-label="Macao Polytechnic University website">Macao Polytechnic University <span aria-hidden="true">↗</span>
-</a>
-</div>
-</div>
 <header class="site-header">
-  <div class="container header-inner">
+  <div class="container masthead">
     <a class="brand" href="{{ '/' | relative_url }}" aria-label="ROBIS Lab home">
-<img src="{{ '/assets/images/brand/robis-logo.png' | relative_url }}" width="1100" height="323" alt="ROBIS Lab — Robotics and Intelligent Systems Lab">
-</a>
-    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
-<span>Menu</span>
-<span class="menu-lines" aria-hidden="true">
-</span>
-</button>
-    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-      {% for item in site.data.navigation %}
-      <a href="{{ item.url | relative_url }}" {% if page.nav == item.title %}aria-current="page"{% endif %}>{{ item.title }}</a>
-      {% endfor %}
-    </nav>
+      <img src="{{ '/assets/images/brand/robis-logo.png' | relative_url }}" width="1100" height="323" alt="ROBIS Lab — Robotics and Intelligent Systems Lab">
+    </a>
+    <div class="university-brand">
+      <a href="https://www.mpu.edu.mo/" aria-label="Macao Polytechnic University website">
+        <img src="{{ '/assets/images/brand/mpu-logo.svg' | relative_url }}" width="989" height="251" alt="Macao Polytechnic University">
+      </a>
+      <span>Faculty of Applied Sciences</span>
+    </div>
+  </div>
+  <div class="navigation-bar">
+    <div class="container navigation-inner">
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+        <span>Menu</span><span class="menu-lines" aria-hidden="true"></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        {% for item in site.data.navigation %}
+        <a href="{{ item.url | relative_url }}" {% if page.nav == item.title %}aria-current="page"{% endif %}>{{ item.title }}</a>
+        {% endfor %}
+      </nav>
+    </div>
   </div>
 </header>

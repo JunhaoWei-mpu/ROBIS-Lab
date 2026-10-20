@@ -32,11 +32,11 @@ python3 scripts/check_site.py _site /ROBIS-Lab
 | 内容 | 修改位置 | 方法 |
 |---|---|---|
 | 成员 | `_members/姓名.md` | YAML 中维护姓名、真实职称、机构、研究兴趣、照片与链接；分隔符后的 Markdown 写完整简介。`group` 使用 `Faculty` 或 `Research Students`，`order` 决定排序。 |
-| 论文 | `_data/publications.yaml` | 每项至少保留 `id/title/authors/year/venue/status/topics/paper_url/source`。`selected: true` 才进入首页。不要把预印本当成正式 venue。 |
+| 论文 | `_data/publications.yaml` | 每项至少保留 `id/title/authors/year/venue/status/topics/paper_url/source`。首页条目由 `index.html` front matter 中的 `selected_publications` ID 列表选择。不要把预印本当成正式 venue。 |
 | 新闻 | `_data/news.yaml` | 在顶部添加月份和英文正文，日期只精确到来源支持的程度，并保留 `source`。不自动抓取。 |
 | 平台 | `_data/platforms.yaml` | 修改阶段、介绍、图像与真实硬件说明；Chironix 长文在 `_projects/chironix.md`。 |
-| 研究方向 | `_data/research.yaml` | 维护问题、技术重点和相关论文、平台、成员 ID。 |
-| 项目 | `_projects/*.md` | 自动生成 `/projects/名称/`；`publication` 关联论文 ID，避免复制作者、录用状态等信息。 |
+| 研究方向 | `_data/research.yaml` | 维护研究问题、`home_summary` 首页短介绍、技术重点和相关论文、平台、成员 ID。 |
+| 项目 | `_projects/*.md` | 自动生成 `/projects/名称/`；`publication` 关联论文 ID；`home_summary`、`home_image` 等字段维护首页研究亮点。 |
 | 图片 | `assets/images/people/`、`platforms/`、`projects/`、`brand/` | 使用小写英文文件名；用优化 WebP 或 PNG；保留真实比例，更新引用与尺寸。原始照片留在仓库外。 |
 | 导航 | `_data/navigation.yaml` | 标题与内部路径。 |
 | 视觉与交互 | `assets/css/site.css`、`assets/js/site.js` | 配色、响应式布局、手机菜单、论文筛选。 |
@@ -70,3 +70,9 @@ gh run list --workflow pages.yml --limit 3
 ## 公开内容边界
 
 商业计划书原件、财务/融资/股权信息、未获证实的技术指标、无关人物照片、凭据和运行环境不入库。对外文案以已确认阶段为准。来源、待确认项和验证记录见 `CONTENT_SOURCES.md`、`CONTENT_TODO.md`、`VALIDATION.md`。
+
+## 首页版式
+
+首页使用学术实验室结构：顶部 ROBIS 与 MPU 官方标识 → 实验室全名和简介 → 研究项目与新闻 → 研究方向与代表论文 → 平台入口。`index.html` front matter 的 `featured_projects` 和 `selected_publications` 控制精选条目；详情来自 `_projects/`、`_data/publications.yaml`，不重复维护录用信息。MPU 标识位于 `_includes/header.html` 的 masthead，在手机端也显示。
+
+CSS/JS 链接带构建时间版本参数，部署后会请求新版资源。新截图保存在仓库旁 `../robis-preview/revision-2/`。

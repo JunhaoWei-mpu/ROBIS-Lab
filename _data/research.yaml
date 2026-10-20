@@ -1,7 +1,7 @@
 - id: aerial
   title: Autonomous Aerial Robotics
-  short: Perception to mission
-  question: How can aerial robots turn observations and task goals into safe, efficient motion?
+  short: UAV navigation and mission planning
+  question: Reliable UAV planning requires fast local decisions and coherent mission-level routes.
   summary: We study autonomous UAV navigation, perception, trajectory planning, and mission generation, connecting
     local motion decisions with larger-scale task planning.
   focus:
@@ -25,10 +25,12 @@
   - jiangyu-lai
   image: autonomous-uav-01
   image_alt: Autonomous UAV Platform 01 with its full airframe visible
+  home_summary: Depth-based navigation, trajectory planning, and language-guided aerial mission generation.
 - id: manipulation
   title: Robotic Manipulation and Mobile Robots
-  short: Motion with interaction
-  question: How can mobility and manipulation work together for physical interaction?
+  short: Motion planning and manipulation
+  question: Manipulation requires reasoning about arm motion, scene geometry, and coordination with a mobile or
+    aerial base.
   summary: Our interests span robot arms, dual-arm coordination, mobile manipulation, and UAV–manipulator integration.
     Chironix provides a physical foundation for studying perception, planning, and demonstration data collection.
   focus:
@@ -48,10 +50,11 @@
   - erli-lyu
   image: chironix-demonstration
   image_alt: Chironix X1 at an in-person platform demonstration
+  home_summary: Robot arms, dual-arm coordination, mobile manipulation, and UAV–manipulator integration.
 - id: embodied
   title: Vision–Language–Action and Embodied Intelligence
-  short: Instructions to action
-  question: How can visual understanding and language instructions guide robot decisions?
+  short: Language-guided robotic tasks
+  question: Language-guided robotics requires converting semantic instructions into structured plans for robot execution.
   summary: We explore the connection between visual grounding, language-based task descriptions, planning, and robot
     execution. Aerial mission generation and robot demonstration data collection offer complementary research settings.
   focus:
@@ -69,10 +72,11 @@
   - jiangyu-lai
   image: chironix-x1
   image_alt: Chironix mobile dual-arm engineering prototype
+  home_summary: Visual grounding, task planning, teleoperation data, and imitation learning.
 - id: computing
   title: Intelligent Computing and Optimization
-  short: Algorithms for decisions
-  question: How can learning, optimization, and structured knowledge improve intelligent decisions?
+  short: Optimization, learning, and knowledge
+  question: Search, learning, and structured knowledge provide complementary tools for planning and decision-making.
   summary: We investigate metaheuristic optimization, reinforcement learning, multi-agent decision-making, knowledge
     representation, and multimodal learning, with links to navigation, engineering design, and intelligent transportation.
   focus:
@@ -93,3 +97,4 @@
   - long-liu
   image: autonomous-uav-02
   image_alt: Autonomous UAV Platform 02 shown as a research hardware platform
+  home_summary: Metaheuristic search, reinforcement learning, multi-agent decisions, and knowledge representation.

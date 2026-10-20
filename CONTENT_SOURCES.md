@@ -59,3 +59,12 @@
 - https://www.kumarrobotics.org/ ：稳定的研究、团队、论文与新闻位置。
 
 访问限制和链接检查结果见 `VALIDATION.md`；抓取失败不直接认定论文链接失效。
+
+## 首页结构修订（2026-10-20）
+
+因作者要求重做首页主次，实际使用 Chrome 查看 HKUST Aerial Robotics、UZH RPG、UPenn Kumar Lab 和 CMU AirLab 的首页。具体借鉴：HKUST 的简短研究介绍与具体项目入口；RPG 的学校/实验室并列标识与新闻；Kumar Lab 的机构层级及稳定栏目。保留 ROBIS 自有照片与成果，未复制参考站图片或人物。当前首页去掉宣传式标语，采用学术信息顺序、普通章节标题、研究配图与侧栏新闻；MPU 官方 SVG 在每页顶部显示。
+
+- https://uav.hkust.edu.hk/
+- https://rpg.ifi.uzh.ch/
+- https://www.kumarrobotics.org/
+- https://theairlab.org/

@@ -35,8 +35,8 @@
   summary: A complementary UAV platform for exploring autonomous robotic systems.
   stage: Research hardware platform
   url: /platforms/#uav-02
-  details: A second aerial platform broadens the hardware available for autonomous systems research. The photograph
-    documents the platform configuration; platform-specific flight results are not claimed here.
+  details: A second aerial platform complements our hardware for autonomous systems research, with research interests
+    in perception, navigation, and motion planning.
   focus: Autonomous systems · perception and planning
 - id: aerial-manipulation
   name: Aerial Manipulation Platform
