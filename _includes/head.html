@@ -1,0 +1,19 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.title != site.title %}{{ page.title | escape }} | {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | escape }}">
+  <meta name="theme-color" content="#0B2F53">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ROBIS Lab">
+  <meta property="og:title" content="{{ page.title | default: site.title | escape }} | Robotics and Intelligent Systems Lab">
+  <meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ page.image | absolute_url }}">
+  <meta property="og:image:alt" content="{{ page.name | default: 'ROBIS Lab — Robotics and Intelligent Systems Lab' | escape }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="{{ '/assets/images/brand/favicon.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/images/brand/favicon.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+</head>

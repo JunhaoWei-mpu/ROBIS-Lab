@@ -1,0 +1,15 @@
+<article class="publication" id="{{ include.pub.id }}" data-publication data-topics="{{ include.pub.topics | join: ' ' }}">
+  <div class="pub-meta">
+<span class="status {% if include.pub.status == 'Accepted' %}accepted{% endif %}">{{ include.pub.status }}</span>
+<span>{{ include.pub.venue }} · {{ include.pub.year }}</span>
+</div>
+  <h3>
+<a href="{{ include.pub.paper_url }}">{{ include.pub.title }}</a>
+</h3>
+  <p class="pub-authors">{{ include.pub.authors | join: ', ' }}</p>
+  <div class="pub-bottom">
+<div class="topic-tags">{% for id in include.pub.topics %}{% assign topic = site.data.research | where: 'id', id | first %}<a href="{{ '/publications/' | relative_url }}?topic={{ id }}">{{ topic.title }}</a>{% endfor %}</div>
+<div class="text-links">
+<a href="{{ include.pub.paper_url }}">{{ include.pub.paper_label | default: 'Paper' }} ↗</a>{% if include.pub.code_url %}<a href="{{ include.pub.code_url }}">Code ↗</a>{% endif %}{% if include.pub.id == 'aries-mission2' or include.pub.id == 'saga' %}<a href="{{ '/projects/' | append: include.pub.id | append: '/' | relative_url }}">Project →</a>{% endif %}</div>
+</div>
+</article>

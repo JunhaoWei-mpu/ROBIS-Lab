@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="container project-page">
+<a class="back-link" href="{{ '/research/' | relative_url }}">← All research</a>
+<div class="project-heading">
+<p class="eyebrow">{{ page.category }}</p>
+<h1>{{ page.title }}</h1>
+<p class="lead">{{ page.description }}</p>{% if page.publication %}{% assign pub = site.data.publications | where: 'id', page.publication | first %}<p class="project-venue">{{ pub.venue }} · {{ pub.year }} · {{ pub.status }}</p>
+<div class="text-links">
+<a href="{{ pub.paper_url }}">Read the {{ pub.paper_label | downcase }} ↗</a>
+<a href="{{ '/publications/#' | append: pub.id | relative_url }}">Publication details →</a>
+</div>{% endif %}</div>
+<div class="prose project-body">{{ content }}</div>
+<a class="back-link" href="{{ '/platforms/' | relative_url }}">Explore our platforms →</a>
+</div>

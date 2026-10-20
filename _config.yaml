@@ -1,0 +1,53 @@
+title: ROBIS Lab
+subtitle: Robotics and Intelligent Systems Lab
+description: "ROBIS Lab at Macao Polytechnic University studies autonomous robots, aerial robotics, manipulation, embodied intelligence, and intelligent computing."
+url: "https://junhaowei-mpu.github.io"
+baseurl: "/ROBIS-Lab"
+lang: en
+timezone: Asia/Macau
+permalink: pretty
+theme: null
+proofer: false
+collections:
+  members:
+    output: true
+  projects:
+    output: true
+    permalink: /projects/:name/
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      image: /assets/images/brand/social-preview.jpg
+  - scope:
+      type: members
+    values:
+      layout: member
+      nav: People
+  - scope:
+      type: projects
+    values:
+      layout: project
+      nav: Research
+plugins:
+  - jekyll-sitemap
+exclude:
+  - README.md
+  - LICENSE
+  - LICENSE.md
+  - CHANGELOG.md
+  - TEMPLATE.md
+  - CONTENT_SOURCES.md
+  - CONTENT_TODO.md
+  - ASSET_MANIFEST.md
+  - VALIDATION.md
+  - Gemfile
+  - Gemfile.lock
+  - scripts
+  - vendor
+  - node_modules
+  - .bundle
+  - .github
+  - .ruby-version
+  - .jekyll-cache

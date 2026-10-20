@@ -1,0 +1,27 @@
+---
+title: Publications
+nav: Publications
+description: "Search selected publications by ROBIS Lab members in aerial robotics, manipulation, embodied intelligence, optimization, and knowledge representation."
+intro: "Selected publications by our members and their collaborators, including work completed at their current and previous institutions."
+---
+{% include page-heading.html eyebrow='Selected Publications by Our Members' %}
+<div class="container publications-content">
+  <form class="publication-filters" id="publication-filters" role="search" hidden>
+<div class="search-field">
+<label for="publication-search">Search publications</label>
+<input id="publication-search" name="q" type="search" placeholder="Title, author, venue, or year…" autocomplete="off">
+</div>
+<div class="topic-field">
+<label for="publication-topic">Research direction</label>
+<select id="publication-topic" name="topic">
+<option value="all">All research directions</option>{% for topic in site.data.research %}<option value="{{ topic.id }}">{{ topic.title }}</option>{% endfor %}</select>
+</div>
+<button class="filter-reset" type="reset">Reset</button>
+</form>
+  <p id="publication-count" class="filter-count" aria-live="polite" hidden>
+</p>
+<p id="publication-empty" class="empty-state" hidden>No publications match your search. Try another keyword or research direction.</p>
+  {% assign years = site.data.publications | group_by: 'year' | sort: 'name' | reverse %}{% for year in years %}<section class="publication-year" data-year>
+<h2>{{ year.name }}</h2>{% for pub in year.items %}{% include citation.html pub=pub %}{% endfor %}</section>{% endfor %}
+  <p class="small-note">Conference acceptance information follows the members’ public records. Preprint links are provided separately from the venue and publication status.</p>
+</div>

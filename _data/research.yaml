@@ -1,0 +1,95 @@
+- id: aerial
+  title: Autonomous Aerial Robotics
+  short: Perception to mission
+  question: How can aerial robots turn observations and task goals into safe, efficient motion?
+  summary: We study autonomous UAV navigation, perception, trajectory planning, and mission generation, connecting
+    local motion decisions with larger-scale task planning.
+  focus:
+  - Depth-based perception and learned motion planning
+  - Geometric safety and dynamically feasible trajectories
+  - Language-guided aerial mission generation
+  platforms:
+  - uav-01
+  - uav-02
+  publications:
+  - aries-mission2
+  - saga
+  - kio-planner
+  members:
+  - junhao-wei
+  - yanxiao-li
+  - dexing-yao
+  - yapeng-wang
+  - erli-lyu
+  - long-liu
+  - jiangyu-lai
+  image: autonomous-uav-01
+  image_alt: Autonomous UAV Platform 01 with its full airframe visible
+- id: manipulation
+  title: Robotic Manipulation and Mobile Robots
+  short: Motion with interaction
+  question: How can mobility and manipulation work together for physical interaction?
+  summary: Our interests span robot arms, dual-arm coordination, mobile manipulation, and UAV–manipulator integration.
+    Chironix provides a physical foundation for studying perception, planning, and demonstration data collection.
+  focus:
+  - Neural motion planning and scene representation
+  - Dual-arm planning and mobile manipulation
+  - UAV–manipulator system integration
+  platforms:
+  - chironix
+  - aerial-manipulation
+  publications:
+  - points-guided
+  - mo-transformer
+  members:
+  - yifu-zhao
+  - haochen-li
+  - junhao-wei
+  - erli-lyu
+  image: chironix-demonstration
+  image_alt: Chironix X1 at an in-person platform demonstration
+- id: embodied
+  title: Vision–Language–Action and Embodied Intelligence
+  short: Instructions to action
+  question: How can visual understanding and language instructions guide robot decisions?
+  summary: We explore the connection between visual grounding, language-based task descriptions, planning, and robot
+    execution. Aerial mission generation and robot demonstration data collection offer complementary research settings.
+  focus:
+  - Vision–language grounding and structured mission planning
+  - Teleoperation and demonstration data collection
+  - Imitation learning and VLA methods as ongoing research
+  platforms:
+  - chironix
+  publications:
+  - aries-mission2
+  members:
+  - junhao-wei
+  - yifu-zhao
+  - yapeng-wang
+  - jiangyu-lai
+  image: chironix-x1
+  image_alt: Chironix mobile dual-arm engineering prototype
+- id: computing
+  title: Intelligent Computing and Optimization
+  short: Algorithms for decisions
+  question: How can learning, optimization, and structured knowledge improve intelligent decisions?
+  summary: We investigate metaheuristic optimization, reinforcement learning, multi-agent decision-making, knowledge
+    representation, and multimodal learning, with links to navigation, engineering design, and intelligent transportation.
+  focus:
+  - Metaheuristic search and constrained optimization
+  - Reinforcement learning and multi-agent decisions
+  - Knowledge representation and multimodal learning
+  platforms: []
+  publications:
+  - clco
+  - dhcrwoa
+  - hyperfm
+  - knowlcp
+  members:
+  - yanxiao-li
+  - junhao-wei
+  - yuhuan-lu
+  - yapeng-wang
+  - long-liu
+  image: autonomous-uav-02
+  image_alt: Autonomous UAV Platform 02 shown as a research hardware platform

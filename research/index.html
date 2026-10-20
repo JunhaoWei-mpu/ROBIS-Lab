@@ -1,0 +1,26 @@
+---
+title: Research
+nav: Research
+description: "Four connected research directions in aerial robotics, manipulation, embodied intelligence, and intelligent computing at ROBIS Lab."
+intro: "From perception and language to motion and physical interaction, we study the methods that connect intelligent decisions with autonomous systems."
+---
+{% include page-heading.html eyebrow='Questions that move us' %}
+<div class="container research-jump">{% for topic in site.data.research %}<a href="#{{ topic.id }}">0{{ forloop.index }} {{ topic.short }} ↓</a>{% endfor %}</div>
+<div class="container research-details">{% for topic in site.data.research %}<article class="research-detail" id="{{ topic.id }}">
+<div class="research-visual">
+<span class="research-number">0{{ forloop.index }}</span>
+<img src="{{ '/assets/images/platforms/' | append: topic.image | append: '.webp' | relative_url }}" alt="{{ topic.image_alt }}" width="1600" height="1200" loading="lazy">
+<p class="image-note">ROBIS research hardware</p>
+</div>
+<div>
+<p class="eyebrow">{{ topic.short }}</p>
+<h2>{{ topic.title }}</h2>
+<p class="research-question">{{ topic.question }}</p>
+<p>{{ topic.summary }}</p>
+<ul>{% for focus in topic.focus %}<li>{{ focus }}</li>{% endfor %}</ul>
+<h3>Related work</h3>
+<div class="related-papers">{% for id in topic.publications %}{% assign pub = site.data.publications | where: 'id', id | first %}<a href="{{ '/publications/#' | append: id | relative_url }}">{{ pub.title }} →</a>{% endfor %}</div>{% if topic.platforms.size > 0 %}<h3>Related platforms</h3>
+<div class="text-links">{% for id in topic.platforms %}{% assign platform = site.data.platforms | where: 'id', id | first %}<a href="{{ platform.url | relative_url }}">{{ platform.name }} →</a>{% endfor %}</div>{% endif %}<h3>People</h3>
+<div class="text-links">{% for slug in topic.members %}{% assign member = site.members | where: 'slug', slug | first %}<a href="{{ member.url | relative_url }}">{{ member.name }}</a>{% endfor %}</div>
+</div>
+</article>{% endfor %}</div>

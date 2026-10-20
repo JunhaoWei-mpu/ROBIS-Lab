@@ -1,0 +1,50 @@
+name: Build and deploy ROBIS Lab
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Set up Ruby and locked dependencies
+        uses: ruby/setup-ruby@824c0e29fdfc7d689c191c27acc969d2d04b7dd8
+        with:
+          ruby-version: '3.3.10'
+          bundler: '2.5.23'
+          bundler-cache: true
+        env:
+          BUNDLE_FROZEN: 'true'
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
+      - name: Build production site
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --trace
+        env:
+          JEKYLL_ENV: production
+      - name: Check project paths and content
+        run: python3 scripts/check_site.py _site "${{ steps.pages.outputs.base_path }}"
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5

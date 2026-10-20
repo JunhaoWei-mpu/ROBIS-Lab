@@ -1,0 +1,5 @@
+source "https://rubygems.org"
+ruby "3.3.10"
+gem "jekyll", "4.3.4"
+gem "jekyll-sitemap", "1.4.0"
+gem "webrick", "1.9.1"

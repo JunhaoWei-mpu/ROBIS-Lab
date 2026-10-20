@@ -1,0 +1,23 @@
+---
+title: Platforms
+nav: Platforms
+description: "Explore Chironix X1 and three physical UAV platforms, including an integrated UAV–robot arm system."
+intro: "Physical systems for exploring autonomous motion, robotic interaction, and the data that connect them."
+---
+{% include page-heading.html eyebrow='Our hardware' %}
+<div class="container platform-jump">{% for platform in site.data.platforms %}<a href="#{{ platform.id }}">{{ platform.name }} ↓</a>{% endfor %}</div>
+<div class="container platform-details">{% for platform in site.data.platforms %}<article class="platform-detail" id="{{ platform.id }}">
+<div class="platform-detail-image">
+<img src="{{ '/assets/images/platforms/' | append: platform.image | append: '.webp' | relative_url }}" width="{{ platform.width }}" height="{{ platform.height }}" alt="{{ platform.alt }}" loading="lazy">
+</div>
+<div class="platform-detail-copy">
+<p class="eyebrow">{{ platform.category }}</p>
+<h2>{{ platform.name }}</h2>
+<p class="stage">{{ platform.stage }}</p>
+<p>{{ platform.details }}</p>
+<p class="hardware-focus">{{ platform.focus }}</p>{% if platform.id == 'chironix' %}<p>Three synchronized RGB-D streams are organized using HDF5/LeRobot conventions. D1/M1 modularization, quick-change interfaces, and automatic joint calibration remain in development.</p>
+<a class="button" href="{{ platform.url | relative_url }}">View Chironix project →</a>{% elsif platform.id == 'aerial-manipulation' %}<a class="text-link" href="{{ '/research/#manipulation' | relative_url }}">Explore manipulation research →</a>{% else %}<a class="text-link" href="{{ '/research/#aerial' | relative_url }}">Explore aerial robotics →</a>{% endif %}</div>
+</article>{% if platform.id == 'chironix' %}<figure class="demonstration-photo">
+<img src="{{ '/assets/images/platforms/chironix-demonstration.webp' | relative_url }}" width="1355" height="895" alt="Chironix X1 being demonstrated to an audience; original privacy blur preserved" loading="lazy">
+<figcaption>Chironix X1 at a platform demonstration.</figcaption>
+</figure>{% endif %}{% endfor %}</div>

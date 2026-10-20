@@ -1,0 +1,15 @@
+<article class="person">
+  <a class="person-photo" href="{{ include.member.url | relative_url }}" tabindex="-1" aria-hidden="true">{% if include.member.image %}<img src="{{ include.member.image | relative_url }}" alt="{{ include.member.name }}" width="600" height="750" loading="lazy" style="object-position:{{ include.member.focal_point | default: '50% 22%' }}">{% else %}<span class="portrait-initials">{{ include.member.initials }}</span>{% endif %}</a>
+  <div class="person-copy">
+<h3>
+<a href="{{ include.member.url | relative_url }}">{{ include.member.name }}</a>
+</h3>
+<p class="person-role">{{ include.member.role }}</p>
+<p class="person-institution">{{ include.member.institution }}</p>
+<p>{{ include.member.interests }}</p>
+<div class="text-links">
+<a href="{{ include.member.url | relative_url }}">Profile <span aria-hidden="true">→</span>
+</a>{% if include.member.homepage %}<a href="{{ include.member.homepage }}">Homepage <span aria-hidden="true">↗</span>
+</a>{% endif %}</div>
+</div>
+</article>

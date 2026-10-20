@@ -1,0 +1,53 @@
+- id: chironix
+  name: Chironix X1
+  category: Mobile manipulation
+  image: chironix-x1
+  width: 1600
+  height: 2133
+  alt: Chironix X1 engineering prototype with mobile base, lift, and dual arms
+  summary: An integrated mobile, lifting, dual-arm platform for robotics research and demonstration data collection.
+  stage: Integrated engineering prototype
+  url: /projects/chironix/
+  details: The X1 engineering prototype has completed assembly and system integration. The project documentation
+    reports hardware validation of the teleoperation data pipeline, LiDAR-based autonomous navigation, and dual-arm
+    motion planning.
+  focus: Mobile base · lifting structure · dual arms · multi-camera perception
+- id: uav-01
+  name: Autonomous UAV Platform 01
+  category: Aerial robotics
+  image: autonomous-uav-01
+  width: 1600
+  height: 726
+  alt: Autonomous UAV Platform 01, with full propellers and onboard equipment visible
+  summary: An aerial research platform supporting our interests in perception, planning, and navigation.
+  stage: Research hardware platform
+  url: /platforms/#uav-01
+  details: This physical UAV platform is part of our aerial robotics research environment. Current research questions
+    connect onboard perception with trajectory planning and mission generation.
+  focus: Aerial perception · navigation · mission planning
+- id: uav-02
+  name: Autonomous UAV Platform 02
+  category: Aerial robotics
+  image: autonomous-uav-02
+  width: 1600
+  height: 1165
+  alt: Autonomous UAV Platform 02 with its complete guarded airframe
+  summary: A complementary UAV platform for exploring autonomous robotic systems.
+  stage: Research hardware platform
+  url: /platforms/#uav-02
+  details: A second aerial platform broadens the hardware available for autonomous systems research. The photograph
+    documents the platform configuration; platform-specific flight results are not claimed here.
+  focus: Autonomous systems · perception and planning
+- id: aerial-manipulation
+  name: Aerial Manipulation Platform
+  category: Aerial manipulation
+  image: aerial-manipulation
+  width: 1600
+  height: 2133
+  alt: UAV with an integrated robotic arm suspended beneath its airframe
+  summary: A UAV–robot arm system connecting aerial mobility with physical interaction.
+  stage: Research hardware platform
+  url: /platforms/#aerial-manipulation
+  details: This platform integrates a UAV with a robotic arm. It provides a physical research setting for questions
+    about coordinated aerial motion, manipulation, and system integration.
+  focus: UAV–manipulator integration · coordinated motion · physical interaction

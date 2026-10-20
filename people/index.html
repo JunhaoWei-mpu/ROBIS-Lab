@@ -1,0 +1,11 @@
+---
+title: People
+nav: People
+description: "Meet the members of ROBIS Lab, with biographies, research interests, and verified institutional affiliations."
+intro: "Our work connects perspectives from robotics, autonomous systems, learning, and intelligent computing."
+---
+{% include page-heading.html eyebrow='Meet the team' %}
+<div class="container people-content">{% assign groups = 'Faculty,Research Students' | split: ',' %}{% for group in groups %}<section class="people-group">
+<h2>{{ group }}</h2>
+<div class="people-grid">{% assign members = site.members | where: 'group', group | sort: 'order' %}{% for member in members %}{% include portrait.html member=member %}{% endfor %}</div>
+</section>{% endfor %}</div>
