@@ -2319,6 +2319,7 @@ button {
 }
 
 /* Lab introduction, contact information, and paired SAGA demonstrations. */
+.lab-introduction-copy,
 .lab-introduction-photo { align-self: start; }
 .contact-page { padding-bottom: 75px; }
 .contact-overview { display: grid; grid-template-columns: 1.15fr 1fr; gap: 65px; align-items: start; }
