@@ -6,7 +6,10 @@ role: Associate Professor
 institution: Macao Polytechnic University
 group: Supervisors
 order: 0
-interests: UAV and robot path planning, applied AI, AI agents and LLM applications.
+interests:
+- UAV and robot path planning
+- Applied AI, AI agents and LLM applications
+- Wireless communications
 image: assets/images/people/yapeng-wang.webp
 permalink: /people/yapeng-wang/
 homepage: https://fca-portal.mpu.edu.mo/profile/yapengwang

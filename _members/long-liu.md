@@ -6,12 +6,16 @@ role: PhD Student
 institution: Macao Polytechnic University
 group: Research Students
 order: 2
-interests: Wireless communications, UAV signal prediction, machine learning, and AI applications.
+interests:
+- Wireless communications
+- UAV signal prediction
+- Machine learning and AI applications
 permalink: /people/long-liu/
 source: Author-provided biography, 2026-10-20
 topics:
 - aerial
 - computing
+- communications
 image: assets/images/people/long-liu.webp
 image_width: 600
 image_height: 834

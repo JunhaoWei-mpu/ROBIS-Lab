@@ -12,18 +12,18 @@ featured_projects:
   <section class="lab-introduction" aria-labelledby="lab-title">
     <div class="lab-introduction-copy">
       <h1 id="lab-title">Robotics and Intelligent Systems Lab</h1>
-      <p><strong>ROBIS Lab</strong> studies autonomous robots and intelligent computational methods. Our research covers UAV navigation and mission planning, robotic manipulation, vision–language–action systems, and optimization.</p>
+      <p><strong>ROBIS Lab</strong> studies autonomous robots and intelligent computational methods. Our research covers UAV navigation and mission planning, robotic manipulation, vision–language–action systems, optimization, and UAV communications.</p>
       <p>We work on perception, planning, and decision-making, using aerial and mobile robotic platforms to study these methods in physical systems.</p>
       <div class="introduction-links">
         <a href="{{ '/research/' | relative_url }}">Explore Research</a>
         <a href="{{ '/people/' | relative_url }}">Meet the Team</a>
       </div>
     </div>
-    <figure class="lab-introduction-photo">
-      <a href="{{ '/projects/chironix/' | relative_url }}" aria-label="Chironix X1 project">
-        <img src="{{ '/assets/images/platforms/chironix-demonstration.webp' | relative_url }}" width="1355" height="895" alt="The Chironix X1 mobile dual-arm robot at a live demonstration" fetchpriority="high">
+    <figure class="lab-introduction-photo" data-hero-carousel aria-label="Lab photographs">
+      <a class="hero-gallery" href="{{ '/platforms/' | relative_url }}" aria-label="Explore our platforms">
+        {% for photo in site.data.hero %}<img data-hero-slide src="{{ photo.image | relative_url }}" width="{{ photo.width }}" height="{{ photo.height }}" alt="{{ photo.alt }}" {% if forloop.first %}fetchpriority="high"{% else %}hidden loading="lazy"{% endif %}>{% endfor %}
       </a>
-      <figcaption>Chironix X1 mobile dual-arm platform. <a href="{{ '/platforms/' | relative_url }}">View our platforms</a></figcaption>
+      <figcaption><a href="{{ '/platforms/' | relative_url }}">View our platforms</a><span class="hero-controls" hidden><span data-hero-count>1 / {{ site.data.hero.size }}</span><button type="button" data-hero-pause aria-label="Pause image rotation">Pause</button><button type="button" data-hero-next aria-label="Next photograph">Next →</button></span></figcaption>
     </figure>
   </section>
 
@@ -34,7 +34,7 @@ featured_projects:
         {% for slug in page.featured_projects %}
         {% assign project = site.projects | where: 'slug', slug | first %}
         {% assign pub = site.data.publications | where: 'id', project.publication | first %}
-        <article class="research-highlight{% if forloop.first %} research-highlight-featured{% endif %}">
+        <article class="research-highlight">
           <a class="highlight-image" href="{{ project.url | relative_url }}" tabindex="-1" aria-hidden="true">
             {% if project.home_still %}<picture><source media="(prefers-reduced-motion: reduce)" srcset="{{ project.home_still | relative_url }}">{% endif %}
             <img src="{{ project.home_image | relative_url }}" width="{{ project.home_image_width }}" height="{{ project.home_image_height }}" alt="{{ project.home_image_alt }}" loading="lazy">
@@ -43,7 +43,6 @@ featured_projects:
           <div class="highlight-description">
             <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
             <p>{{ project.home_summary }}</p>
-            {% if pub %}<p class="highlight-venue">{{ pub.venue }} · {{ pub.year }} · {{ pub.status }}</p>{% endif %}
             <div class="academic-links"><a href="{{ project.url | relative_url }}">Project</a>{% if pub %}<a href="{{ pub.paper_url }}">{{ pub.paper_label }}</a>{% endif %}{% assign project_code = project.code_url | default: pub.code_url %}{% if project_code %}<a href="{{ project_code }}">Code</a>{% endif %}{% if project.benchmark_url %}<a href="{{ project.benchmark_url }}">Benchmark</a>{% endif %}</div>
           </div>
         </article>

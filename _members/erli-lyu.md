@@ -6,7 +6,11 @@ role: Lecturer
 institution: Macao Polytechnic University
 group: Supervisors
 order: 2
-interests: Neural motion planning, point clouds, autonomous navigation, and human–robot cooperation.
+interests:
+- Neural motion planning
+- Point cloud representation learning
+- Autonomous navigation
+- Reinforcement learning and human–robot cooperation
 image: assets/images/people/erli-lyu.webp
 permalink: /people/erli-lyu/
 homepage: https://fca-portal.mpu.edu.mo/profile/erlilyu

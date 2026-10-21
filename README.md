@@ -41,7 +41,7 @@ python3 scripts/check_site.py _site /ROBIS-Lab
 | 导航 | `_data/navigation.yaml` | 标题与内部路径。 |
 | 视觉与交互 | `assets/css/site.css`、`assets/js/site.js` | 配色、响应式布局、手机菜单、论文筛选。 |
 
-方向 ID：`aerial`、`manipulation`、`embodied`、`computing`。添加成员时，只有核实的个人主页才填写 `homepage`；没有照片可填写 `initials` 并省略 `image`。不要虚构职称、主页或实验室角色。成员照片使用圆形容器，`focal_point` 控制取景位置；白底照片可设置 `portrait_fit: contain`、`portrait_padding` 保留头顶留白，`portrait_zoom` 调整人物大小。每次替换照片后查看列表与详情页，不能裁掉头部。
+方向 ID：`aerial`、`manipulation`、`embodied`、`computing`、`communications`。添加成员时，只有核实的个人主页才填写 `homepage`；没有照片可填写 `initials` 并省略 `image`。不要虚构职称、主页或实验室角色。成员照片使用圆形容器，`focal_point` 控制取景位置；白底照片可设置 `portrait_fit: contain`、`portrait_padding` 保留头顶留白，`portrait_zoom` 调整人物大小。每次替换照片后查看列表与详情页，不能裁掉头部。
 
 论文 `status` 使用真实状态，例如 `Accepted` 或 `Published`。`paper_label: Preprint` 明确 arXiv 的链接性质；有真实代码库时才填写 `code_url`。作者全名来自原论文/Crossref，否则保留来源缩写。成员加入前的成果也可收录，但页面按成员成果表述。
 
@@ -89,4 +89,12 @@ CSS/JS 链接带构建时间版本参数，部署后会请求新版资源。最�
 
 - 首页 People 覆盖导师和研究学生全部 11 人；导师顺序及学生顺序由各成员 `order` 控制，Xuan Cheng 在 Long Liu 前。
 - SAGA 首页动画在 `_projects/saga.md` 的 `home_image`，`home_still` 指定减少动态效果时的静态替代。静态图取自原动画第 80 帧；原始 GIF 保留仓库外。
-- 导航使用本站自托管 Roboto，文件在 `assets/fonts/`，许可证在 `assets/notices/`。平台/研究设备图片采用白色页面自然显示，无额外灰底。
+- 导航与正文使用一致字体。平台/研究设备图片采用白色页面自然显示，无额外灰底。
+
+## 最新页面维护方式
+
+- `_data/hero.yaml` 维护首页轮换照片；现为 jqr2、展示1、openday、ways。每张图填写 image / width / height / alt。五秒自动轮换，可暂停和手动切换；减少动态偏好时初始暂停。
+- `_members/*.md` 的 `interests` 现在是 YAML 列表，每个研究兴趣占一项；列表和成员详情共用。圆形头像不加描边或人工底色，MPU 学校名不在每个人下重复；不同学校保留真实机构。
+- 导航与正文统一为系统 Arial / Helvetica 字体，不再使用独立 Roboto。
+- Research 展示五个方向的介绍、技术重点与配图，不显示 People、相关论文/项目/平台列表或图片说明。新增 UAV Communications and Networked Systems 概括 UAV 通信、信号预测、低轨卫星/NR5G 和多无人机规划。
+- 首页研究亮点统一左图右文，不显示发表状态；完整 venue/status 在 Publications 页维护。新闻使用 🎉，来源保存在数据文件，访客页面不显示 Member update。

@@ -6,7 +6,7 @@
 |---|---|---|
 | 1.png | 主 ROBIS logo；白边裁切、等比缩放 | assets/images/brand/robis-logo.png |
 | 2.png | 备选四旋翼 logo | assets/images/brand/robis-uav-logo-alternative.png |
-| jqr1.png | Chironix X1 机器人本体 | assets/images/platforms/chironix-x1-20261021.webp |
+| jqr1 (1).png | 作者更新的 Chironix X1 透明底机器人本体；仅裁完全透明边界并保留 6 px 余量 | assets/images/platforms/chironix-x1-ac2286da.webp |
 | jqr2.png | Chironix X1 现场展示；保留原有隐私处理 | assets/images/platforms/chironix-demonstration.webp |
 | uav1.png | Autonomous UAV Platform 01；只裁透明空白 | assets/images/platforms/autonomous-uav-01.webp |
 | uav2.png | Autonomous UAV Platform 02；只裁透明空白 | assets/images/platforms/autonomous-uav-02.webp |
@@ -43,3 +43,13 @@
 | saga_fpv.gif | 作者提供的 SAGA FPV 仿真演示；保持 618×344 和 24 秒时长，240 源帧的重复画面合并为 237 帧，编码为约 696 KB 的动画 WebP；静态代表帧供减少动态偏好使用 | assets/images/projects/saga-fpv.webp；saga-fpv-poster.webp |
 
 作者更新 jqr1.png 尺寸及 uav3.png 后已重新实际查看并编码。UAV3 只裁完全透明边界并保留余量；全部旋翼、起落架与机械臂保留。网站文件名带日期，原始素材不改动。
+
+最新 jqr1 更新：实际查看 `jqr1 (1).png`（246×404 RGBA），仅去掉透明空边并保留余量，无损编码为 181×357 WebP。原图 SHA-256：`ac2286dae3759369edcc0f364cebc65c3ce924f20f7567ad37cbfa1803b9b264`。原始 jqr1.png 与 jqr1 (1).png 均保留仓库外。
+
+| 新素材 | 用途 | 公开资源 |
+|---|---|---|
+| 展示1.jpg（展示1.png 为同内容） | 首页 UAV 展示轮换图 | assets/images/platforms/uav-demonstration.webp |
+| openday.png | 首页平台展示轮换图 | assets/images/platforms/open-day.webp |
+| ways.png | 首页活动合影轮换图，不依外貌标注具体成员 | assets/images/platforms/ways.webp |
+| Manipulation.gif | Research 机械臂方向演示，完整等比编码 | assets/images/research/manipulation.webp；manipulation-still.webp |
+| Wikimedia Commons: Rastrigin function.png | 公共领域非凸函数曲面图 | assets/images/research/rastrigin-landscape.webp |

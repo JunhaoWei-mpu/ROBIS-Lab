@@ -6,7 +6,9 @@ role: Master’s Student
 institution: Macau University of Science and Technology
 group: Research Students
 order: 6
-interests: Autonomous UAV navigation and humanoid robots.
+interests:
+- Autonomous UAV navigation
+- Humanoid robots
 image: assets/images/people/dexing-yao-20261021.webp
 permalink: /people/dexing-yao/
 homepage: null

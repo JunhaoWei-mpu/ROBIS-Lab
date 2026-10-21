@@ -1,18 +1,4 @@
 /* ROBIS Lab. Shared academic layout; Greene Lab Website Template content engine. */
-@font-face {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("../fonts/roboto-latin-400.woff2") format("woff2");
-}
-@font-face {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url("../fonts/roboto-latin-700.woff2") format("woff2");
-}
 :root {
   --navy: #0b2f53;
   --cyan: #079ebc;
@@ -179,7 +165,7 @@ button {
   position: relative;
   display: block;
   padding: 12px 1px;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
@@ -314,6 +300,7 @@ button {
 }
 
 .lab-introduction h1 {
+  color: #000;
   font-size: 44px;
   line-height: 1.15;
   letter-spacing: -0.025em;
@@ -454,6 +441,9 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 23px 32px;
+}
+.research-area-list > :last-child:nth-child(odd) {
+  grid-column: 1 / -1;
 }
 .research-area-list h3 {
   font-size: 17px;
@@ -856,7 +846,6 @@ button {
   margin-inline: auto;
   display: block;
   background: transparent;
-  border: 1px solid var(--line);
   border-radius: 50%;
   overflow: hidden;
 }
@@ -900,6 +889,18 @@ button {
   color: var(--muted);
   margin-top: 12px;
 }
+.person-interests {
+  margin: 16px 0 0;
+  padding-left: 18px;
+  text-align: left;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+.person-interests li + li,
+.member-interests li + li {
+  margin-top: 4px;
+}
 .person-copy .text-links {
   margin-top: 16px;
 }
@@ -928,7 +929,6 @@ button {
   aspect-ratio: 1;
   overflow: hidden;
   background: transparent;
-  border: 1px solid var(--line);
   border-radius: 50%;
 }
 .member-portrait img {
@@ -1983,6 +1983,11 @@ button {
     line-height: 1.7;
     margin-top: 10px;
   }
+  .person-interests {
+    font-size: 13px;
+    padding-left: 15px;
+    margin-top: 12px;
+  }
   .person-copy .person-role {
     font-size: 12px !important;
   }
@@ -2239,24 +2244,6 @@ button {
 }
 
 /* Featured research uses its full overview figure; section and item headings are distinct. */
-.research-highlight-featured {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 20px;
-}
-.research-highlight-featured .highlight-description {
-  order: -1;
-}
-.research-highlight-featured .highlight-image {
-  width: 100%;
-  margin: 0;
-}
-.research-highlight-featured .highlight-image img {
-  width: 100%;
-  height: auto;
-  max-height: none;
-}
 .project-resources {
   margin-top: 22px;
 }
@@ -2276,8 +2263,44 @@ button {
     order: -1;
     flex-shrink: 0;
   }
-  .research-highlight-featured {
-    display: flex;
-    gap: 17px;
-  }
+}
+
+.hero-gallery {
+  position: relative;
+  display: block;
+  aspect-ratio: 3 / 2;
+}
+.hero-gallery img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.lab-introduction-photo figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.hero-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.hero-controls[hidden] {
+  display: none;
+}
+.hero-controls button {
+  border: 0;
+  background: transparent;
+  font: inherit;
+  color: var(--ink);
+  cursor: pointer;
+  padding: 6px 3px;
+  min-height: 32px;
+}
+.hero-controls button:hover {
+  text-decoration: underline;
 }

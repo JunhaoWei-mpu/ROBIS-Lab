@@ -84,3 +84,71 @@ if (filterForm) {
   });
   applyFilters();
 }
+
+const heroCarousel = document.querySelector("[data-hero-carousel]");
+if (heroCarousel) {
+  const slides = [...heroCarousel.querySelectorAll("[data-hero-slide]")];
+  const controls = heroCarousel.querySelector(".hero-controls");
+  const pauseButton = heroCarousel.querySelector("[data-hero-pause]");
+  const nextButton = heroCarousel.querySelector("[data-hero-next]");
+  const counter = heroCarousel.querySelector("[data-hero-count]");
+  const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+  let current = 0;
+  let paused = reducedMotion.matches;
+  let interacting = false;
+  let timer;
+  const schedule = () => {
+    clearInterval(timer);
+    pauseButton.textContent = paused ? "Play" : "Pause";
+    pauseButton.setAttribute(
+      "aria-label",
+      paused ? "Start image rotation" : "Pause image rotation",
+    );
+    if (!paused && !interacting && !document.hidden)
+      timer = setInterval(() => show((current + 1) % slides.length), 5000);
+  };
+  const show = async (index) => {
+    slides[index].loading = "eager";
+    try {
+      await slides[index].decode();
+    } catch (_) {
+      return;
+    }
+    slides.forEach((slide, i) => {
+      slide.hidden = i !== index;
+    });
+    current = index;
+    counter.textContent = `${index + 1} / ${slides.length}`;
+  };
+  pauseButton.addEventListener("click", () => {
+    paused = !paused;
+    schedule();
+  });
+  nextButton.addEventListener("click", () => {
+    show((current + 1) % slides.length);
+    schedule();
+  });
+  heroCarousel.addEventListener("mouseenter", () => {
+    interacting = true;
+    schedule();
+  });
+  heroCarousel.addEventListener("mouseleave", () => {
+    interacting = heroCarousel.contains(document.activeElement);
+    schedule();
+  });
+  heroCarousel.addEventListener("focusin", () => {
+    interacting = true;
+    schedule();
+  });
+  heroCarousel.addEventListener("focusout", (event) => {
+    interacting = heroCarousel.contains(event.relatedTarget);
+    schedule();
+  });
+  reducedMotion.addEventListener("change", () => {
+    paused = reducedMotion.matches;
+    schedule();
+  });
+  document.addEventListener("visibilitychange", schedule);
+  controls.hidden = slides.length < 2;
+  schedule();
+}

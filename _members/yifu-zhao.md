@@ -6,7 +6,9 @@ role: Master’s Student
 institution: Macao Polytechnic University
 group: Research Students
 order: 4
-interests: Robotic arms and healthcare robots.
+interests:
+- Robotic arms
+- Healthcare robots
 image: assets/images/people/yifu-zhao.webp
 permalink: /people/yifu-zhao/
 homepage: null

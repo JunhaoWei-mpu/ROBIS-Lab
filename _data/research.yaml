@@ -50,10 +50,12 @@
   - junhao-wei
   - erli-lyu
   image: chironix-demonstration
-  image_width: 1355
-  image_height: 895
-  image_alt: Chironix X1 at an in-person platform demonstration
+  image_width: 488
+  image_height: 600
+  image_alt: Chironix dual-arm manipulation demonstration
   home_summary: Robot arms, dual-arm coordination, mobile manipulation, and UAV–manipulator integration.
+  image_path: /assets/images/research/manipulation.webp
+  image_still: /assets/images/research/manipulation-still.webp
 - id: embodied
   title: Vision–Language–Action and Embodied Intelligence
   short: Language-guided robotic tasks
@@ -73,7 +75,7 @@
   - yifu-zhao
   - yapeng-wang
   - jiangyu-lai
-  image: chironix-x1-20261021
+  image: chironix-x1-ac2286da
   image_alt: Chironix mobile dual-arm engineering prototype
   home_summary: Visual grounding, task planning, teleoperation data, and imitation learning.
   projects:
@@ -100,7 +102,31 @@
   - long-liu
   - xuan-cheng
   image: autonomous-uav-02
-  image_alt: Autonomous UAV Platform 02 shown as a research hardware platform
+  image_alt: Three-dimensional surface of the nonconvex Rastrigin function
   home_summary: Metaheuristic search, reinforcement learning, multi-agent decisions, and knowledge representation.
   projects:
   - clco
+  image_path: /assets/images/research/rastrigin-landscape.webp
+  image_width: 1400
+  image_height: 767
+- id: communications
+  title: UAV Communications and Networked Systems
+  short: UAV communications and networking
+  question: Communication quality and motion planning are coupled challenges for connected UAV systems.
+  summary: We study wireless communication and signal prediction for UAV systems, connecting communication conditions
+    with intelligent planning. Our interests include low Earth orbit satellite and NR5G signal processing, machine
+    learning for communication systems, and coordinated planning for UAV fleets.
+  focus:
+  - UAV wireless communications and signal prediction
+  - Low Earth orbit satellite and NR5G signal processing
+  - Machine learning for communication-aware decision-making
+  - AI-driven path planning for multi-UAV systems
+  platforms: []
+  publications: []
+  members:
+  - xuan-cheng
+  - long-liu
+  image: autonomous-uav-02
+  image_alt: Autonomous UAV research platform
+  home_summary: UAV wireless communication, signal prediction, satellite/NR5G signal processing, and AI-driven multi-UAV
+    planning.

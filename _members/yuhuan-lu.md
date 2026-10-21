@@ -6,7 +6,10 @@ role: Assistant Professor
 institution: Macao Polytechnic University
 group: Supervisors
 order: 1
-interests: Knowledge representation, deep learning, reinforcement learning, transportation, and healthcare.
+interests:
+- Knowledge representation and deep learning
+- Reinforcement learning and generative AI
+- Intelligent transportation and healthcare
 image: assets/images/people/yuhuan-lu-20261021.webp
 permalink: /people/yuhuan-lu/
 homepage: https://ryanlu32.github.io/

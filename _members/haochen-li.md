@@ -6,7 +6,9 @@ role: Master’s Student
 institution: Macao Polytechnic University
 group: Research Students
 order: 5
-interests: Robotic systems and trajectory planning for robotic manipulators.
+interests:
+- Robotic systems
+- Manipulator trajectory planning
 image: assets/images/people/haochen-li.webp
 permalink: /people/haochen-li/
 homepage: null

@@ -6,7 +6,10 @@ role: Master’s Student
 institution: Macao Polytechnic University
 group: Research Students
 order: 3
-interests: Metaheuristic algorithms, reinforcement learning for multi-agent systems, and UAV–robotic arm integration.
+interests:
+- Metaheuristic optimization
+- Reinforcement learning for multi-agent systems
+- Integrated UAV–robotic arm systems
 image: assets/images/people/yanxiao-li.webp
 permalink: /people/yanxiao-li/
 homepage: null

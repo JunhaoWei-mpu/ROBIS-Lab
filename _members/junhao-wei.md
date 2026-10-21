@@ -6,7 +6,11 @@ role: PhD Student
 institution: Macao Polytechnic University
 group: Research Students
 order: 0
-interests: Metaheuristic algorithms, autonomous UAV navigation, VLA systems, and UAV–robot arm integration.
+interests:
+- Metaheuristic optimization
+- Autonomous UAV navigation
+- Vision–language–action systems
+- Integrated UAV–robot arm systems
 image: assets/images/people/junhao-wei.webp
 permalink: /people/junhao-wei/
 homepage: https://junhaowei-mpu.github.io/

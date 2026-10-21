@@ -90,3 +90,14 @@
 - 最新作者修订：学生顺序为 Junhao Wei、Xuan Cheng、Long Liu，其余既定顺序保持；姓名显示黑色。首页 People 同时显示导师与研究学生全部 11 人。平台与研究设备图去掉人工灰色底板；最新 jqr1.png / uav3.png 已逐一查看并替换。
 - 作者提供 saga_fpv.gif，为仿真柱状场景的第一视角演示；动画保持源尺寸、全部画面内容与 24 秒总时长，不标注为实机飞行。首页及项目页使用优化动画 WebP，减少动态偏好下使用静态代表帧。
 - 参考页导航字体核对其 HTML 内嵌 @font-face 为 Roboto；本站自托管其 Latin 400/700 字体，不依赖访客浏览器请求参考站或字体 API。字库元数据确认为 Copyright 2011 Google Inc., Roboto Version 2.137; 2017, Apache License 2.0，许可证与来源保留在 assets/notices/。
+
+- 后续作者更新 jqr1：当前原 jqr1.png 与此前版本一致，新文件为 jqr1 (1).png。已实际查看透明底机器人本体并替换，设备完整保留，无生成式改动。首页三项 Research highlights 统一使用同一左图右文组件；实验室全名标题改为纯黑 #000000。
+
+## 本轮页面与素材更新
+
+- 作者明确提供 jqr1 (1).png 透明底机器人图，按该版本替换。原始文件保留仓库外，公开图仅裁完全透明余量并无损编码。
+- Manipulation.gif 已实际查看，为真实双臂机器人演示；等比编码为 488×600 动画 WebP，保留全部画面及时长，提供静态替代。
+- 非凸函数配图采用 Diegotorquemada 自行绘制并释放至公共领域的 Rastrigin function.png：https://commons.wikimedia.org/wiki/File:Rastrigin_function.png 。已实际查看原图并等比编码；来源与公共领域说明保留在 assets/notices/rastrigin-source.txt，无需在图下添加文字。
+- 展示1.jpg / 展示1.png 内容一致，采用 JPEG 源图；openday.png 与 ways.png 已逐一实际查看。首页按作者要求与 jqr2 轮换，未为照片虚构新闻日期。
+- 人员研究兴趣由作者提供简介拆为分点列表，未增加未经提供的能力。新增 UAV Communications and Networked Systems 来自 Long Liu / Xuan Cheng 的已给方向；角色与机构维持已确认事实。
+- 依作者最新要求：导航字体恢复与正文一致；Research 去掉小标题、People 名单、资源列表及图下说明；删除 CAST 新闻和 Member update 链接标签，新闻使用 🎉。

@@ -6,7 +6,9 @@ role: Master’s Student
 institution: Macao Polytechnic University
 group: Research Students
 order: 7
-interests: UAV autonomous navigation, autonomous mission generation, and planning.
+interests:
+- Autonomous UAV navigation
+- Autonomous mission generation and planning
 permalink: /people/jiangyu-lai/
 image: assets/images/people/jiangyu-lai.webp
 source: Author-provided biography, 2026-10-20

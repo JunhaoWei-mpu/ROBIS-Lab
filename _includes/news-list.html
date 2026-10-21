@@ -1,5 +1,5 @@
 <ol class="news-list">{% for item in site.data.news limit: include.limit %}<li>
 <time datetime="{{ item.month }}">{{ item.month | replace: '-', '.' }}</time>
 <div>
-<p>{{ item.text }}</p>{% unless include.compact %}<a class="news-source" href="{{ item.source }}">Member update ↗</a>{% endunless %}</div>
+<p><span aria-hidden="true">🎉</span> {{ item.text }}</p></div>
 </li>{% endfor %}</ol>

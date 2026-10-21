@@ -6,14 +6,16 @@ role: PhD Student
 institution: Macao Polytechnic University
 group: Research Students
 order: 1
-interests: Integration of low-orbit satellite/NR5G signal processing with artificial intelligence, and AI-driven
-  path planning for multi-UAV systems.
+interests:
+- Low Earth orbit satellite and NR5G signal processing
+- AI-driven multi-UAV path planning
 permalink: /people/xuan-cheng/
 image: assets/images/people/xuan-cheng.webp
 source: Author-provided biography and portrait, 2026-10-21
 topics:
 - aerial
 - computing
+- communications
 image_width: 598
 image_height: 900
 focal_point: 50% 18%

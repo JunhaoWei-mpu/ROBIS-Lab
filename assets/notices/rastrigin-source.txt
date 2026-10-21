@@ -1,0 +1,7 @@
+Rastrigin function.png
+Author: Diegotorquemada; own work, 2010-05-09.
+Source: https://commons.wikimedia.org/wiki/File:Rastrigin_function.png
+Original: https://upload.wikimedia.org/wikipedia/commons/8/8b/Rastrigin_function.png
+The creator released this work into the public domain worldwide.
+Changes: proportional resize and WebP encoding; plot content retained.
+This is a mathematical landscape illustration, not a ROBIS experimental result.
