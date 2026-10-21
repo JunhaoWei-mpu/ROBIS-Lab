@@ -31,8 +31,8 @@ python3 scripts/check_site.py _site /ROBIS-Lab
 
 | 内容 | 修改位置 | 方法 |
 |---|---|---|
-| 成员 | `_members/姓名.md` | YAML 中维护姓名、真实职称、机构、研究兴趣、照片与链接；分隔符后的 Markdown 写完整简介。`group` 使用 `Faculty` 或 `Research Students`，`order` 决定排序。 |
-| 论文 | `_data/publications.yaml` | 每项至少保留 `id/title/authors/year/venue/status/topics/paper_url/source`。首页条目由 `index.html` front matter 中的 `selected_publications` ID 列表选择。不要把预印本当成正式 venue。 |
+| 成员 | `_members/姓名.md` | YAML 中维护姓名、真实职称、机构、研究兴趣、照片与链接；分隔符后的 Markdown 写完整简介。`group` 使用 `Supervisors` 或 `Research Students`；`lab_role` 是实验室角色，`role` 是学校职称/学位身份，`order` 决定排序。 |
+| 论文 | `_data/publications.yaml` | 每项至少保留 `id/title/authors/year/venue/status/topics/paper_url/source`。首页不单列论文宣传区块；论文列表仅保留团队相关共同成果。不要把预印本当成正式 venue。 |
 | 新闻 | `_data/news.yaml` | 在顶部添加月份和英文正文，日期只精确到来源支持的程度，并保留 `source`。不自动抓取。 |
 | 平台 | `_data/platforms.yaml` | 修改阶段、介绍、图像与真实硬件说明；Chironix 长文在 `_projects/chironix.md`。 |
 | 研究方向 | `_data/research.yaml` | 维护研究问题、`home_summary` 首页短介绍、技术重点和相关论文、平台、成员 ID。 |
@@ -73,6 +73,15 @@ gh run list --workflow pages.yml --limit 3
 
 ## 首页版式
 
-首页使用学术实验室结构：顶部 ROBIS 与 MPU 官方标识 → 实验室全名和简介 → 研究项目与新闻 → 研究方向与代表论文 → 平台入口。`index.html` front matter 的 `featured_projects` 和 `selected_publications` 控制精选条目；详情来自 `_projects/`、`_data/publications.yaml`，不重复维护录用信息。MPU 标识位于 `_includes/header.html` 的 masthead，在手机端也显示。
+首页使用学术实验室结构：顶部 ROBIS 与 MPU 学院组合标识 → 实验室全名和简介 → 研究亮点与新闻 → 研究方向与平台入口；侧栏提供导师、完整团队与联系入口。`index.html` front matter 的 `featured_projects` 控制研究亮点；详情来自 `_projects/`、`_data/publications.yaml`，不重复维护录用信息。MPU 标识位于 `_includes/header.html` 的 masthead，在手机端也显示。
 
-CSS/JS 链接带构建时间版本参数，部署后会请求新版资源。新截图保存在仓库旁 `../robis-preview/revision-2/`。
+CSS/JS 链接带构建时间版本参数，部署后会请求新版资源。最新截图保存在仓库旁 `../robis-preview/revision-3/`。
+
+## 2026-10-21 内容调整
+
+- 首页研究亮点由 `index.html` 的 `featured_projects` 控制，现为 ARIES-Mission++ 和 SAGA。ARIES-Mission++ 的代码、benchmark、简介及配图在 `_projects/aries-mission-pp.md`；未确认的论文 venue/status 不填写。
+- 首页移除 Selected publications 区块；`_data/publications.yaml` 保留团队相关共同论文，不收录导师个人论文目录。
+- 联系人由 `_data/contact.yaml` 的 `member` 选择，姓名、学校职称、邮箱和主页从该成员资料读取，现为 Yapeng Wang。
+- 人员：Yapeng Wang、Yuhuan Lu、Erli Lyu 为 Supervisors；Long Liu 与 Xuan Cheng 为 PhD Student。导师的实验室角色与学校职称分别维护。
+- 顶部标识采用作者提供的 `fca.png`，公开路径为 `assets/images/brand/mpu-fca-logo.png`；不再附加独立学院文字。
+- Yuhuan Lu、Dexing Yao 使用本轮本地新照片，文件名含日期避免旧图缓存；Xuan Cheng 使用 `xuancheng.jpg`。

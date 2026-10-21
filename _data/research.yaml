@@ -23,9 +23,12 @@
   - erli-lyu
   - long-liu
   - jiangyu-lai
+  - xuan-cheng
   image: autonomous-uav-01
   image_alt: Autonomous UAV Platform 01 with its full airframe visible
   home_summary: Depth-based navigation, trajectory planning, and language-guided aerial mission generation.
+  projects:
+  - aries-mission-pp
 - id: manipulation
   title: Robotic Manipulation and Mobile Robots
   short: Motion planning and manipulation
@@ -40,9 +43,7 @@
   platforms:
   - chironix
   - aerial-manipulation
-  publications:
-  - points-guided
-  - mo-transformer
+  publications: []
   members:
   - yifu-zhao
   - haochen-li
@@ -73,6 +74,8 @@
   image: chironix-x1
   image_alt: Chironix mobile dual-arm engineering prototype
   home_summary: Visual grounding, task planning, teleoperation data, and imitation learning.
+  projects:
+  - aries-mission-pp
 - id: computing
   title: Intelligent Computing and Optimization
   short: Optimization, learning, and knowledge
@@ -87,14 +90,13 @@
   publications:
   - clco
   - dhcrwoa
-  - hyperfm
-  - knowlcp
   members:
   - yanxiao-li
   - junhao-wei
   - yuhuan-lu
   - yapeng-wang
   - long-liu
+  - xuan-cheng
   image: autonomous-uav-02
   image_alt: Autonomous UAV Platform 02 shown as a research hardware platform
   home_summary: Metaheuristic search, reinforcement learning, multi-agent decisions, and knowledge representation.

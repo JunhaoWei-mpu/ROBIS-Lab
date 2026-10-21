@@ -1,19 +1,15 @@
 ---
 title: ROBIS Lab
 nav: Home
-description: "Robotics and Intelligent Systems Lab, Faculty of Applied Sciences, Macao Polytechnic University. Research in aerial robotics, manipulation, embodied intelligence, and optimization."
+description: Robotics and Intelligent Systems Lab, Faculty of Applied Sciences, Macao Polytechnic University. Research
+  in aerial robotics, manipulation, embodied intelligence, and optimization.
 featured_projects:
-  - aries-mission2
-  - saga
-selected_publications:
-  - clco
-  - points-guided
-  - hyperfm
+- aries-mission-pp
+- saga
 ---
 <div class="container lab-home">
   <section class="lab-introduction" aria-labelledby="lab-title">
     <div class="lab-introduction-copy">
-      <p class="lab-affiliation">Faculty of Applied Sciences · Macao Polytechnic University</p>
       <h1 id="lab-title">Robotics and Intelligent Systems Lab</h1>
       <p><strong>ROBIS Lab</strong> studies autonomous robots and intelligent computational methods. Our research covers UAV navigation and mission planning, robotic manipulation, vision–language–action systems, and optimization.</p>
       <p>We work on perception, planning, and decision-making, using aerial and mobile robotic platforms to study these methods in physical systems.</p>
@@ -37,15 +33,15 @@ selected_publications:
         {% for slug in page.featured_projects %}
         {% assign project = site.projects | where: 'slug', slug | first %}
         {% assign pub = site.data.publications | where: 'id', project.publication | first %}
-        <article class="research-highlight">
+        <article class="research-highlight{% if forloop.first %} research-highlight-featured{% endif %}">
           <a class="highlight-image" href="{{ project.url | relative_url }}" tabindex="-1" aria-hidden="true">
             <img src="{{ project.home_image | relative_url }}" width="{{ project.home_image_width }}" height="{{ project.home_image_height }}" alt="{{ project.home_image_alt }}" loading="lazy">
           </a>
-          <div>
+          <div class="highlight-description">
             <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
             <p>{{ project.home_summary }}</p>
-            <p class="highlight-venue">{{ pub.venue }} · {{ pub.year }} · {{ pub.status }}</p>
-            <div class="academic-links"><a href="{{ project.url | relative_url }}">Project</a><a href="{{ pub.paper_url }}">{{ pub.paper_label }}</a></div>
+            {% if pub %}<p class="highlight-venue">{{ pub.venue }} · {{ pub.year }} · {{ pub.status }}</p>{% endif %}
+            <div class="academic-links"><a href="{{ project.url | relative_url }}">Project</a>{% if pub %}<a href="{{ pub.paper_url }}">{{ pub.paper_label }}</a>{% endif %}{% if project.code_url %}<a href="{{ project.code_url }}">Code</a>{% endif %}{% if project.benchmark_url %}<a href="{{ project.benchmark_url }}">Benchmark</a>{% endif %}</div>
           </div>
         </article>
         {% endfor %}
@@ -60,18 +56,7 @@ selected_publications:
         </div>
       </section>
 
-      <section class="home-section" aria-labelledby="publications-title">
-        <div class="academic-section-heading"><h2 id="publications-title">Selected publications</h2><a href="{{ '/publications/' | relative_url }}">All publications</a></div>
-        <p class="home-section-note">Work by our members and their collaborators.</p>
-        {% for id in page.selected_publications %}
-        {% assign pub = site.data.publications | where: 'id', id | first %}
-        <article class="home-publication">
-          <h3><a href="{{ pub.paper_url }}">{{ pub.title }}</a></h3>
-          <p class="home-publication-authors">{{ pub.authors | join: ', ' }}</p>
-          <p class="home-publication-venue">{{ pub.venue }} · {{ pub.year }} · {{ pub.status }}</p>
-        </article>
-        {% endfor %}
-      </section>
+
     </div>
 
     <aside class="home-sidebar" aria-label="Lab news and people">
@@ -81,15 +66,15 @@ selected_publications:
         <p class="home-section-note">Publication updates from our members. <a href="https://junhaowei-mpu.github.io/#news">Source</a></p>
       </section>
       <section class="home-section home-people" aria-labelledby="people-title">
-        <div class="academic-section-heading"><h2 id="people-title">People</h2></div>
-        <p>Faculty and research students working in robotics and intelligent computing.</p>
-        <ul>{% assign faculty = site.members | where: 'group', 'Faculty' | sort: 'order' %}{% for member in faculty %}<li><a href="{{ member.url | relative_url }}">{{ member.name }}</a>{% if member.homepage %}<a class="faculty-homepage" href="{{ member.homepage }}">Homepage</a>{% endif %}</li>{% endfor %}</ul>
+        <div class="academic-section-heading"><h2 id="people-title">Supervisors</h2></div>
+
+        <ul>{% assign supervisors = site.members | where: 'group', 'Supervisors' | sort: 'order' %}{% for member in supervisors %}<li><a href="{{ member.url | relative_url }}">{{ member.name }}</a>{% if member.homepage %}<a class="faculty-homepage" href="{{ member.homepage }}">Homepage</a>{% endif %}</li>{% endfor %}</ul>
         <a class="directory-link" href="{{ '/people/' | relative_url }}">View all members</a>
       </section>
       <section class="home-section home-contact" aria-labelledby="contact-title">
         <div class="academic-section-heading"><h2 id="contact-title">Contact</h2></div>
-        <p>Faculty of Applied Sciences<br>Macao Polytechnic University<br>Macao, China</p>
-        <p>Junhao Wei<br><a href="mailto:p2312195@mpu.edu.mo">p2312195@mpu.edu.mo</a></p>
+        {% assign contact = site.members | where: 'slug', site.data.contact.member | first %}<p>{{ site.data.contact.unit }}<br>{{ contact.institution }}<br>{{ site.data.contact.city }}</p>
+        <p>{{ contact.name }}<br><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>
       </section>
     </aside>
   </div>

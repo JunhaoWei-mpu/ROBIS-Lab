@@ -46,8 +46,8 @@
 ## 新闻与联系方式
 
 - 新闻静态整理自 https://junhaowei-mpu.github.io/#news 的当前 13 条记录（2026.10 至 2025.12）。NCMMSC 2026 为 **4 篇**；只保留月份，不合成实验室累计统计。
-- 每条以 Junhao Wei 及合作者表述，避免扩大归属。网页只提供自然来源入口，抓取信息留在本文件。未设置定期抓取任务。
-- 联系人 Junhao Wei，p2312195@mpu.edu.mo；地点限学校/学院、Macao, China。未推测实验室房间或统一邮箱。
+- 按来源记录具体新闻，不重复添加姓名前缀，避免扩大成果归属。网页只提供自然来源入口，抓取信息留在本文件。未设置定期抓取任务。
+- 联系人 Yapeng Wang，yapengwang@mpu.edu.mo；地点限学校/学院、Macao, China。未推测实验室房间或统一邮箱。
 
 ## 设计参考（仅结构）
 
@@ -68,3 +68,13 @@
 - https://rpg.ifi.uzh.ch/
 - https://www.kumarrobotics.org/
 - https://theairlab.org/
+
+## 2026-10-21 作者更新与公开项目
+
+- 作者明确指定 Supervisors 为 Yapeng Wang、Yuhuan Lu、Erli Lyu，按此顺序展示；学校职称独立保留。Long Liu 与 Xuan Cheng 均为 PhD Student。Long Liu 原简介硕士在读表述按新确认改为博士在读，未推断博士专业/入学年份。
+- Xuan Cheng 的学历、ZTE 经历、博士专业与研究兴趣均来自作者本轮英文简介。新头像对应 `yuhuan.png`、`dexing.png`、`xuancheng.jpg`，已逐一查看。
+- 联系人由作者改为 Yapeng Wang，邮箱 yapengwang@mpu.edu.mo，与原校方资料相符。
+- 使用作者提供 `fca.png`，图像已含 Macao Polytechnic University / Faculty of Applied Sciences；删除顶部额外文字及简介上方重复机构行。查找过程中也实际查看校方学院首页 https://mpusite.mpu.edu.mo/esca/en/index.php ，确认学院名称与标识用途；不使用旧 ESCA 图形替代用户提供的新组合标识。
+- ARIES-Mission++：https://github.com/JunhaoWei-mpu/ARIES-Mission-pp ，采用公开 commit `7162d6a4c5663137e7c5dbc7d2f733d239a0fb47` 的 README 与系统总览图。页面只概述视觉语言定位、多无人机能量约束规划、任务文件导出与公开资源；不推断论文作者表、venue、录用状态，不把 SITL 写成实机验证。图像 MIT 版权说明同时保留在公开资源目录。
+- 导师个人论文已按作者要求从成果列表及研究方向关联中移除。当前 5 篇为团队相关共同成果；首页取消独立 Selected publications 区块。
+- 本轮重新查看 HKUST Aerial Robotics、Kumar Lab 的标题层级，采用清楚的页面标题 / 栏目标题 / 项目标题三级结构，字体大小、字重与分隔线分别设置。

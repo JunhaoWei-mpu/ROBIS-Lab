@@ -139,7 +139,7 @@ button {
   height: auto;
 }
 .university-brand {
-  width: 272px;
+  width: 410px;
   text-align: right;
   flex-shrink: 0;
 }
@@ -147,13 +147,7 @@ button {
   width: 100%;
   height: auto;
 }
-.university-brand > span {
-  display: block;
-  font-size: 11px;
-  color: #53635b;
-  margin-top: 5px;
-  letter-spacing: 0.015em;
-}
+
 .navigation-bar {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -303,18 +297,15 @@ button {
   padding-block: 37px 34px;
   border-bottom: 1px solid var(--line);
 }
-.lab-affiliation {
-  font-size: 12px;
-  color: var(--muted);
-  line-height: 1.6;
-  margin-bottom: 14px;
-}
+
 .lab-introduction h1 {
-  font-size: 38px;
-  line-height: 1.18;
+  font-size: 44px;
+  line-height: 1.15;
   letter-spacing: -0.025em;
   margin-bottom: 22px;
   max-width: 530px;
+
+  font-weight: 700;
 }
 .lab-introduction-copy > p:not(.lab-affiliation) {
   font-size: 16px;
@@ -373,13 +364,17 @@ button {
   align-items: baseline;
   justify-content: space-between;
   gap: 20px;
-  border-bottom: 1px solid var(--line);
-  padding-bottom: 11px;
+  border-bottom: 2px solid var(--line);
+  padding-bottom: 13px;
   margin-bottom: 22px;
 }
 .academic-section-heading h2 {
-  font-size: 23px;
+  font-size: 28px;
   letter-spacing: -0.01em;
+
+  font-weight: 700;
+
+  color: #17364c;
 }
 .academic-section-heading > a {
   font-size: 12px;
@@ -407,8 +402,10 @@ button {
   object-fit: contain;
 }
 .research-highlight h3 {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 9px;
+
+  font-weight: 600;
 }
 .research-highlight h3 a {
   text-decoration: none;
@@ -444,9 +441,11 @@ button {
   gap: 23px 32px;
 }
 .research-area-list h3 {
-  font-size: 16px;
+  font-size: 17px;
   line-height: 1.45;
   margin-bottom: 8px;
+
+  font-weight: 600;
 }
 .research-area-list h3 a {
   text-decoration: none;
@@ -466,35 +465,11 @@ button {
   line-height: 1.6;
   margin-block: 0 17px;
 }
-.home-publication + .home-publication {
-  margin-top: 22px;
-}
-.home-publication h3 {
-  font-size: 15px;
-  line-height: 1.6;
-  letter-spacing: 0;
-  font-weight: 600;
-}
-.home-publication h3 a {
-  text-decoration: none;
-}
-.home-publication h3 a:hover {
-  text-decoration: underline;
-}
-.home-publication-authors {
-  font-size: 12px;
-  color: var(--muted);
-  line-height: 1.65;
-  margin-top: 6px;
-}
-.home-publication-venue {
-  font-size: 12px;
-  color: #394f62;
-  line-height: 1.65;
-  margin-top: 4px;
-}
+
 .home-sidebar .academic-section-heading h2 {
-  font-size: 22px;
+  font-size: 25px;
+
+  font-weight: 700;
 }
 .home-sidebar .academic-section-heading {
   margin-bottom: 6px;
@@ -834,10 +809,12 @@ button {
   padding-block: 15px 35px;
 }
 .people-group > h2 {
-  font-size: 1.6rem;
-  border-bottom: 1px solid var(--line);
+  font-size: 30px;
+  border-bottom: 2px solid var(--line);
   padding-bottom: 20px;
   margin-bottom: 30px;
+
+  font-weight: 700;
 }
 .people-grid {
   display: grid;
@@ -1203,9 +1180,13 @@ button {
   padding-bottom: 55px;
 }
 .people-group > h2 {
-  font-size: 25px;
+  font-size: 30px;
   padding-bottom: 14px;
   margin-bottom: 25px;
+
+  font-weight: 700;
+
+  border-bottom: 2px solid var(--line);
 }
 .person-photo {
   height: 245px;
@@ -1337,7 +1318,11 @@ button {
     grid-template-columns: 1.1fr 1fr;
   }
   .lab-introduction h1 {
-    font-size: 34px;
+    font-size: 38px;
+
+    font-weight: 700;
+
+    line-height: 1.15;
   }
   .home-content {
     gap: 30px;
@@ -1354,7 +1339,11 @@ button {
     font-size: 14px;
   }
   .academic-section-heading h2 {
-    font-size: 22px;
+    font-size: 26px;
+
+    font-weight: 700;
+
+    color: #17364c;
   }
   .research-area-list {
     gap: 22px;
@@ -1378,7 +1367,7 @@ button {
     width: 235px;
   }
   .university-brand {
-    width: 240px;
+    width: 350px;
   }
   .navigation-inner {
     min-height: 45px;
@@ -1435,12 +1424,14 @@ button {
     padding-block: 30px;
   }
   .lab-introduction h1 {
-    font-size: 30px;
+    font-size: 34px;
     margin-bottom: 17px;
+
+    font-weight: 700;
+
+    line-height: 1.15;
   }
-  .lab-affiliation {
-    font-size: 11px;
-  }
+
   .lab-introduction-copy > p:not(.lab-affiliation) {
     font-size: 14px;
     line-height: 1.75;
@@ -1474,27 +1465,41 @@ button {
     max-height: 140px;
   }
   .research-highlight h3 {
-    font-size: 19px;
+    font-size: 21px;
+
+    font-weight: 600;
   }
   .academic-section-heading {
     gap: 12px;
     margin-bottom: 20px;
+
+    border-bottom: 2px solid var(--line);
+
+    padding-bottom: 13px;
   }
   .academic-section-heading h2 {
-    font-size: 21px;
+    font-size: 24px;
+
+    font-weight: 700;
+
+    color: #17364c;
   }
   .academic-section-heading > a {
     font-size: 10px;
   }
   .home-sidebar .academic-section-heading h2 {
-    font-size: 20px;
+    font-size: 23px;
+
+    font-weight: 700;
   }
   .research-area-list {
     grid-template-columns: 1fr;
     gap: 20px;
   }
   .research-area-list h3 {
-    font-size: 16px;
+    font-size: 17px;
+
+    font-weight: 600;
   }
   .research-area-list p {
     font-size: 13px;
@@ -1502,13 +1507,8 @@ button {
   .home-sidebar .news-list p {
     font-size: 12px;
   }
-  .home-publication h3 {
-    font-size: 14px;
-  }
+
   .home-publication-authors,
-  .home-publication-venue {
-    font-size: 11px;
-  }
   .home-platforms {
     margin-top: 30px;
   }
@@ -1612,15 +1612,10 @@ button {
     flex-shrink: 1;
   }
   .university-brand {
-    width: 146px;
+    width: 340px;
     flex-shrink: 1;
   }
-  .university-brand > span {
-    font-size: 8px;
-    line-height: 1.4;
-    margin-top: 5px;
-    white-space: nowrap;
-  }
+
   .navigation-inner {
     min-height: 42px;
   }
@@ -1654,17 +1649,14 @@ button {
     display: block;
     padding-block: 27px 25px;
   }
-  .lab-affiliation {
-    font-size: 10px;
-    max-width: 290px;
-    margin-bottom: 12px;
-    line-height: 1.6;
-  }
+
   .lab-introduction h1 {
-    font-size: 31px;
-    line-height: 1.2;
+    font-size: 32px;
+    line-height: 1.15;
     max-width: 345px;
     margin-bottom: 18px;
+
+    font-weight: 700;
   }
   .lab-introduction-copy > p:not(.lab-affiliation) {
     font-size: 15px;
@@ -1695,12 +1687,18 @@ button {
     margin-top: 29px;
   }
   .academic-section-heading {
-    padding-bottom: 10px;
+    padding-bottom: 13px;
     margin-bottom: 20px;
     gap: 16px;
+
+    border-bottom: 2px solid var(--line);
   }
   .academic-section-heading h2 {
-    font-size: 23px;
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #17364c;
   }
   .academic-section-heading > a {
     font-size: 11px;
@@ -1719,8 +1717,10 @@ button {
     max-height: 105px;
   }
   .research-highlight h3 {
-    font-size: 19px;
+    font-size: 21px;
     margin-bottom: 7px;
+
+    font-weight: 600;
   }
   .research-highlight p {
     font-size: 14px;
@@ -1746,23 +1746,17 @@ button {
     gap: 21px;
   }
   .research-area-list h3 {
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 6px;
+
+    font-weight: 600;
   }
   .research-area-list p {
     font-size: 14px;
     line-height: 1.7;
   }
-  .home-publication h3 {
-    font-size: 14px;
-  }
+
   .home-publication-authors,
-  .home-publication-venue {
-    font-size: 11px;
-  }
-  .home-publication + .home-publication {
-    margin-top: 22px;
-  }
   .home-sidebar {
     border-left: 0;
     border-top: 1px solid var(--line);
@@ -1770,7 +1764,9 @@ button {
     padding: 26px 0 0;
   }
   .home-sidebar .academic-section-heading h2 {
-    font-size: 23px;
+    font-size: 25px;
+
+    font-weight: 700;
   }
   .home-sidebar .news-list li {
     display: grid;
@@ -1908,9 +1904,13 @@ button {
     padding-block: 9px 26px;
   }
   .people-group > h2 {
-    font-size: 23px;
+    font-size: 26px;
     margin-bottom: 23px;
     padding-bottom: 13px;
+
+    font-weight: 700;
+
+    border-bottom: 2px solid var(--line);
   }
   .people-grid {
     grid-template-columns: 1fr;
@@ -2192,5 +2192,49 @@ button {
   * {
     transition: none !important;
     animation: none !important;
+  }
+}
+
+/* Featured research uses its full overview figure; section and item headings are distinct. */
+.research-highlight-featured {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 20px;
+}
+.research-highlight-featured .highlight-description {
+  order: -1;
+}
+.research-highlight-featured .highlight-image {
+  width: 100%;
+  margin: 0;
+}
+.research-highlight-featured .highlight-image img {
+  width: 100%;
+  height: auto;
+  max-height: none;
+}
+.project-resources {
+  margin-top: 22px;
+}
+@media (max-width: 600px) {
+  .masthead {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+    padding-block: 16px;
+  }
+  .brand {
+    width: 180px;
+    flex-shrink: 0;
+  }
+  .university-brand {
+    width: min(100%, 340px);
+    order: -1;
+    flex-shrink: 0;
+  }
+  .research-highlight-featured {
+    display: flex;
+    gap: 17px;
   }
 }

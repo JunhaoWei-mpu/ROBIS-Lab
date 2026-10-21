@@ -23,7 +23,6 @@
   source:
   - https://junhaowei-mpu.github.io/
   - https://arxiv.org/abs/2608.12763
-  selected: true
 - id: saga
   title: 'SAGA: A Robust Self-Attention and Goal-Aware Anchor-based Planner for Safe UAV Autonomous Navigation'
   authors:
@@ -49,7 +48,6 @@
   source:
   - https://junhaowei-mpu.github.io/
   - https://arxiv.org/abs/2605.02301
-  selected: true
 - id: kio-planner
   title: 'KIO-planner: Attention-Guided Single-Stage Motion Planning with Dual Mapping for UAV Navigation'
   authors:
@@ -77,7 +75,6 @@
   source:
   - https://junhaowei-mpu.github.io/
   - https://arxiv.org/abs/2605.19703
-  selected: false
 - id: clco
   title: 'Coordination Core-Ligand Collaborative Optimizer (CLCO): A chemistry-inspired metaheuristic for global
     numerical optimization, space–air–ground path planning, and constrained engineering design'
@@ -101,7 +98,6 @@
   source:
   - https://api.crossref.org/works/10.1016/j.aei.2026.105092
   - https://junhaowei-mpu.github.io/
-  selected: true
   code_url: https://github.com/JunhaoWei-mpu/ROBIS-Lab/tree/Coordination-Core-Ligand-Collaborative-Optimizer-(CLCO)
 - id: dhcrwoa
   title: 'DHCRWOA: adaptive whale optimization algorithm with Cauchy-Rayleigh distribution for numerical and engineering
@@ -125,81 +121,3 @@
   source:
   - https://api.crossref.org/works/10.1038/s41598-026-49084-z
   - https://junhaowei-mpu.github.io/
-  selected: false
-- id: knowlcp
-  title: 'KnowLCP: Knowledge Augmented Lane Change Prediction for Autonomous Driving'
-  authors:
-  - Yuhuan Lu
-  - Pengpeng Xu
-  - Wei Wang
-  - Zhen Zhang
-  - Han Liu
-  - Xiping Hu
-  year: 2026
-  venue: AAAI Conference on Artificial Intelligence
-  status: Published
-  topics:
-  - computing
-  paper_url: https://doi.org/10.1609/aaai.v40i45.41244
-  paper_label: Paper
-  source:
-  - https://ryanlu32.github.io/
-  - https://doi.org/10.1609/aaai.v40i45.41244
-  selected: false
-- id: hyperfm
-  title: 'HyperFM: Fact-Centric Multimodal Fusion for Link Prediction over Hyper-Relational Knowledge Graphs'
-  authors:
-  - Yuhuan Lu
-  - Weijian Yu
-  - Xin Jing
-  - Dingqi Yang
-  year: 2025
-  venue: 'Proceedings of ACL (Volume 1: Long Papers)'
-  status: Published
-  topics:
-  - computing
-  paper_url: https://aclanthology.org/2025.acl-long.142/
-  paper_label: Paper
-  source:
-  - https://ryanlu32.github.io/
-  - https://aclanthology.org/2025.acl-long.142/
-  selected: false
-- id: points-guided
-  title: Motion Planning of Manipulator by Points-Guided Sampling Network
-  authors:
-  - Erli Lyu
-  - Tingting Liu
-  - Jiaole Wang
-  - Shuang Song
-  - Max Q. -H. Meng
-  year: 2023
-  venue: IEEE Transactions on Automation Science and Engineering
-  status: Published
-  topics:
-  - manipulation
-  paper_url: https://doi.org/10.1109/tase.2022.3168542
-  paper_label: Paper
-  source:
-  - https://fca-portal.mpu.edu.mo/profile/erlilyu
-  - https://api.crossref.org/works/10.1109/tase.2022.3168542
-  selected: false
-- id: mo-transformer
-  title: 'MO-Transformer: A Transformer-Based Multi-Object Point Cloud Reconstruction Network'
-  authors:
-  - Erli Lyu
-  - Zhengyan Zhang
-  - Wei Liu
-  - Jiaole Wang
-  - Shuang Song
-  - Max Q.-H. Meng
-  year: 2022
-  venue: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)
-  status: Published
-  topics:
-  - manipulation
-  paper_url: https://doi.org/10.1109/iros47612.2022.9981837
-  paper_label: Paper
-  source:
-  - https://fca-portal.mpu.edu.mo/profile/erlilyu
-  - https://api.crossref.org/works/10.1109/iros47612.2022.9981837
-  selected: false

@@ -4,7 +4,7 @@ layout: default
 <div class="container member-page">
   <a class="back-link" href="{{ '/people/' | relative_url }}">← All people</a>
   <div class="member-bio">
-    <div>{% if page.image and page.initials == nil %}<img class="member-portrait" src="{{ page.image | relative_url }}" width="600" height="750" alt="{{ page.name }}" style="object-position:{{ page.focal_point | default: '50% 22%' }}">{% else %}<div class="member-portrait portrait-placeholder" aria-label="{{ page.name }} initials">
+    <div>{% if page.image and page.initials == nil %}<img class="member-portrait" src="{{ page.image | relative_url }}" width="{{ page.image_width | default: 600 }}" height="{{ page.image_height | default: 750 }}" alt="{{ page.name }}" style="object-position:{{ page.focal_point | default: '50% 22%' }}">{% else %}<div class="member-portrait portrait-placeholder" aria-label="{{ page.name }} initials">
 <span class="portrait-initials">{{ page.initials }}</span>
 </div>{% endif %}</div>
     <div class="prose">
@@ -15,7 +15,7 @@ layout: default
 <div class="text-links">{% if page.homepage %}<a href="{{ page.homepage }}">Personal homepage ↗</a>{% endif %}{% if page.email %}<a href="mailto:{{ page.email }}">{{ page.email }}</a>{% endif %}{% if page.github %}<a href="{{ page.github }}">GitHub ↗</a>{% endif %}</div>
 <h2>Biography</h2>{{ content }}<h2>Research interests</h2>
 <p>{{ page.interests }}</p>
-<a class="text-link" href="{{ '/publications/' | relative_url }}?q={{ page.name | url_encode }}">Find publications →</a>
+{% assign has_papers = false %}{% for pub in site.data.publications %}{% if pub.authors contains page.name %}{% assign has_papers = true %}{% endif %}{% endfor %}{% if has_papers %}<a class="text-link" href="{{ '/publications/' | relative_url }}?q={{ page.name | url_encode }}">Find publications →</a>{% endif %}
 </div>
   </div>
 </div>

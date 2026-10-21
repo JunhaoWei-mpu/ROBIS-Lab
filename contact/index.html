@@ -5,19 +5,20 @@ description: "Contact ROBIS Lab at the Faculty of Applied Sciences, Macao Polyte
 intro: "Connect with us about robotics, intelligent systems, and research collaboration."
 ---
 {% include page-heading.html eyebrow='Contact' %}
+{% assign contact = site.members | where: 'slug', site.data.contact.member | first %}
 <div class="container contact-grid">
 <div class="contact-details">
 <h2>ROBIS Lab</h2>
 <p class="lead">Robotics and Intelligent Systems Lab</p>
-<p>Faculty of Applied Sciences<br>Macao Polytechnic University<br>Macao, China</p>
+<p>{{ site.data.contact.unit }}<br>{{ contact.institution }}<br>{{ site.data.contact.city }}</p>
 <a class="text-link" href="https://www.mpu.edu.mo/">University website ↗</a>
 <div class="contact-person">
 <p class="eyebrow">Contact person</p>
-<h3>Junhao Wei</h3>
-<p>PhD Student · Macao Polytechnic University</p>
-<a class="contact-email" href="mailto:p2312195@mpu.edu.mo">p2312195@mpu.edu.mo</a>
+<h3>{{ contact.name }}</h3>
+<p>{{ contact.role }} · {{ contact.institution }}</p>
+<a class="contact-email" href="mailto:{{ contact.email }}">{{ contact.email }}</a>
 <p>
-<a class="text-link" href="https://junhaowei-mpu.github.io/">Personal homepage ↗</a>
+<a class="text-link" href="{{ contact.homepage }}">Personal homepage ↗</a>
 </p>
 </div>
 </div>

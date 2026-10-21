@@ -1,6 +1,6 @@
 # 验证记录
 
-核对日期：2026-10-20。发布后补充实际 Actions 与线上核验记录。
+最近核对日期：2026-10-21。以下保留历次验证记录。
 
 ## 本地构建与路径
 
@@ -52,3 +52,13 @@
 - 手机菜单、Escape、多词论文搜索、方向筛选、无结果提示、Reset、成员详情与减少动态偏好通过。
 - 已实际查看新版首页在三个宽度的截图，以及 People、Platforms 的代表图；21 页生产路径与元数据检查通过。
 - 新版截图独立保留于 `../robis-preview/revision-2/`，旧版截图保留供比较。
+
+## 导师分组、品牌与联系修订（2026-10-21）
+
+- 生产构建及 `/ROBIS-Lab` 路径检查通过：23 个 HTML 页面，包含 7 个一级页面、11 个成员页、4 个项目页和 404。
+- Chrome 在 1440、768、390 px 分别检查 13 个页面，共 39 次：无横向溢出、坏图或控制台错误，每页学院组合标识可见。
+- 实际操作手机菜单、Escape、成员详情、键盘跳转、论文搜索/方向筛选/空结果/Reset 和减少动态效果设置，全部通过。
+- 内容断言通过：11 位成员；导师顺序 Yapeng Wang → Yuhuan Lu → Erli Lyu；Long Liu 与 Xuan Cheng 为 PhD Student；Yuhuan Lu、Dexing Yao 使用新照片；Contact 为 Yapeng Wang 和 yapengwang@mpu.edu.mo；首页首先展示 ARIES-Mission++，无 Selected publications 或重复姓名前缀。
+- 论文列表保留 5 篇团队相关共同成果，移除 4 篇导师个人论文及其研究方向关联。ARIES-Mission++ 未虚构论文状态，其代码仓库和 benchmark release 均已核对。
+- 实际查看首页桌面/手机、People、Contact 截图。截图位于 `../robis-preview/revision-3/`，不提交公开源码。
+- 本次 push 后应以最新提交对应的 Actions / github-pages deployment 成功及线上 HTTP、浏览器核验作为发布完成依据。

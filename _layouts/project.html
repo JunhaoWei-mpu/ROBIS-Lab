@@ -10,7 +10,7 @@ layout: default
 <div class="text-links">
 <a href="{{ pub.paper_url }}">Read the {{ pub.paper_label | downcase }} ↗</a>
 <a href="{{ '/publications/#' | append: pub.id | relative_url }}">Publication details →</a>
-</div>{% endif %}</div>
+</div>{% endif %}{% if page.code_url or page.benchmark_url %}<div class="text-links project-resources">{% if page.code_url %}<a href="{{ page.code_url }}">Code</a>{% endif %}{% if page.benchmark_url %}<a href="{{ page.benchmark_url }}">Benchmark</a>{% endif %}</div>{% endif %}</div>
 <div class="prose project-body">{{ content }}</div>
 <a class="back-link" href="{{ '/platforms/' | relative_url }}">Explore our platforms →</a>
 </div>
