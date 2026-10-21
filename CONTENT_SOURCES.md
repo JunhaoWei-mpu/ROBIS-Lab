@@ -141,3 +141,7 @@ MRBMO 的 Preprints.org 版本 https://www.preprints.org/manuscript/202502.0188 
 2026-10-21 展示调整：主页扩写实验室研究问题与实物平台介绍，五个研究方向加粗。Contact 参考 HyperSec 的导师联系与 Join us 入口，加入学生咨询和合作说明、Yapeng Wang 头像及官方主页、mailto 邮件链接；未声明已确认的空缺岗位，不复刻需要服务端的表单，不增加未核实电话和房间地址。来源 https://hypersec.research.st/ 、https://hypersec.research.st/contact_form 、https://fca-portal.mpu.edu.mo/profile/yapengwang 。
 
 SAGA 详情页按作者要求移除架构图；改为并排显示作者提供的 saga_fpv.gif 与 saga_top.gif。两个动画分别保留完整视角与原始时间，不把模拟动画标成实机实验；提供静态帧支持减少动态效果偏好。原始素材保留；FPV 网站使用压缩后的 WebP，俯视图采用完整 1 MB GIF（比重编码 WebP 更小），并提供 WebP 静态封面。
+
+2026-10-21 作者最终调整：首页介绍精简为两段，五个方向仍加粗；轮播图片与左侧介绍块顶端对齐，移除过长的首页方向说明列表。
+
+2026-10-21 arXiv 日期再核对：排序改用最新公开版本日期 `updated`，并非抓取时间。UAV Audition 的官方 v1 仍为 2026-09-19，FleetGuard 为 2026-10-13，无后续修订；UAV Audition 在 2026 年目录中仅排在两篇 October 条目之后。AeroTSBoost 用真实 v2 更新时间 2026-05-26。FleetGuard 的 IEEE CSCloud 2026 / Accepted 保持不变。

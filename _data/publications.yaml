@@ -70,7 +70,7 @@
   source:
   - https://arxiv.org/abs/2610.18003
   sort_date: '2026-10-13'
-  sort_date_basis: Preprint first posted; acceptance date not specified
+  sort_date_basis: Latest public arXiv version date; acceptance date not specified
 - id: uav-audition
   title: Real-Validated UAV Audition Under Rotor Ego-Noise for Low-False-Alarm Human Detection
   authors:
@@ -94,7 +94,7 @@
   source:
   - https://arxiv.org/abs/2609.22830
   sort_date: '2026-09-19'
-  sort_date_basis: Preprint first posted; acceptance date not specified
+  sort_date_basis: Latest public arXiv version date; acceptance date not specified
 - id: aries-mission2
   title: 'ARIES-Mission2: A Zero-Shot Vision-Language-Action Framework for Fast Large-Scale Aerial Mission Generation'
   authors:
@@ -121,7 +121,7 @@
   - https://junhaowei-mpu.github.io/
   - https://arxiv.org/abs/2608.12763
   sort_date: '2026-08-13'
-  sort_date_basis: Preprint first posted; acceptance date not specified
+  sort_date_basis: Latest public arXiv version date; acceptance date not specified
 - id: aries-mission
   title: 'ARIES-Mission: A Vision-Language System for Efficient UAV Mission Generation'
   authors:
@@ -222,7 +222,7 @@
   source:
   - https://arxiv.org/abs/2606.03422
   sort_date: '2026-06-02'
-  sort_date_basis: Preprint first posted; acceptance date not specified
+  sort_date_basis: Latest public arXiv version date; acceptance date not specified
 - id: hlwoa
   title: 'HLWOA: An Enhanced Whale Optimization Algorithm for UAV Relay Communication Deployment'
   authors:
@@ -275,7 +275,7 @@
   source:
   - https://arxiv.org/abs/2605.28103
   sort_date: '2026-05-27'
-  sort_date_basis: Preprint first posted; acceptance date not specified
+  sort_date_basis: Latest public arXiv version date; acceptance date not specified
 - id: aerotsboost
   title: 'AeroTSBoost: Temporal-Statistical Boosting for Real-World UAV Telemetry Anomaly Mining'
   authors:
@@ -299,8 +299,8 @@
   paper_label: Preprint
   source:
   - https://arxiv.org/abs/2605.25639
-  sort_date: '2026-05-25'
-  sort_date_basis: Preprint first posted; acceptance date not specified
+  sort_date: '2026-05-26'
+  sort_date_basis: Latest public arXiv version date; acceptance date not specified
 - id: kio-planner
   title: 'KIO-planner: Attention-Guided Single-Stage Motion Planning with Dual Mapping for UAV Navigation'
   authors:
@@ -329,7 +329,7 @@
   - https://junhaowei-mpu.github.io/
   - https://arxiv.org/abs/2605.19703
   sort_date: '2026-05-19'
-  sort_date_basis: Preprint first posted; acceptance date not specified
+  sort_date_basis: Latest public arXiv version date; acceptance date not specified
 - id: la-bhh
   title: Landscape-Aware Bandit Hyper-Heuristics for Online Operator Selection in UAV Inspection Routing
   authors:
@@ -357,7 +357,7 @@
   - https://arxiv.org/abs/2605.14620
   - https://2026.ijcai.org/accepted-workshops/
   sort_date: '2026-05-14'
-  sort_date_basis: Preprint first posted; acceptance date not specified
+  sort_date_basis: Latest public arXiv version date; acceptance date not specified
 - id: washh
   title: 'WASHH: An Anchor-Aware Whale-Guided Selection Hyper-Heuristic for Continuous Optimization and SVC Configuration'
   authors:
@@ -385,7 +385,7 @@
   - https://arxiv.org/abs/2605.28844
   - https://2026.ijcai.org/accepted-workshops/
   sort_date: '2026-05-13'
-  sort_date_basis: Preprint first posted; acceptance date not specified
+  sort_date_basis: Latest public arXiv version date; acceptance date not specified
 - id: low-cost-labels
   title: 'Low-Cost Labels, Reliable Choices: Rollout-Calibrated Hyper-Heuristics for Job Shop Scheduling'
   authors:
@@ -412,7 +412,7 @@
   - https://arxiv.org/abs/2605.23957
   - https://2026.ijcai.org/accepted-workshops/
   sort_date: '2026-05-11'
-  sort_date_basis: Preprint first posted; acceptance date not specified
+  sort_date_basis: Latest public arXiv version date; acceptance date not specified
 - id: saga
   title: 'SAGA: A Robust Self-Attention and Goal-Aware Anchor-based Planner for Safe UAV Autonomous Navigation'
   authors:
@@ -439,7 +439,7 @@
   - https://junhaowei-mpu.github.io/
   - https://arxiv.org/abs/2605.02301
   sort_date: '2026-05-04'
-  sort_date_basis: Preprint first posted; acceptance date not specified
+  sort_date_basis: Latest public arXiv version date; acceptance date not specified
 - id: uav-signal-prediction
   title: Research on UAV 3D Airspace Signal Strength Prediction Based on Physical Perception Feature Engineering
   authors:
@@ -519,7 +519,7 @@
   source:
   - https://arxiv.org/abs/2603.20501
   sort_date: '2026-03-18'
-  sort_date_basis: Preprint first posted; acceptance date not specified
+  sort_date_basis: Latest public arXiv version date; acceptance date not specified
 - id: geometric-woa
   title: A Geometric Whale Optimization Algorithm with Triangular Flight for Numerical Optimization and Engineering
     Design
@@ -576,7 +576,7 @@
   source:
   - https://arxiv.org/abs/2601.19346
   sort_date: '2026-01-27'
-  sort_date_basis: Preprint first posted; acceptance date not specified
+  sort_date_basis: Latest public arXiv version date; acceptance date not specified
 - id: nawoa-xgboost
   title: 'NAWOA-XGBoost: A Novel Model for Early Prediction of Academic Potential in Computer Science Students'
   authors:
