@@ -103,3 +103,5 @@ CSS/JS 链接带构建时间版本参数，部署后会请求新版资源。最�
 首页与轮播维护：`index.html` 保存实验室介绍和首页研究生显示数量（`home_limit`，当前四位）；`_data/hero.yaml` 的条目顺序即轮播顺序。页脚并排 logo 位于 `_includes/footer.html`。研究方向图在 `_data/research.yaml` 中修改 `image_path`（完整路径）或 `image`（平台图片文件名，不带后缀），同步写入准确尺寸和 alt。
 
 论文只修改 `_data/publications.yaml`。正式出版与预印本为同一篇时只保留一个条目：`paper_url` 指向正式 DOI，`preprint_url` 可保存 arXiv 链接；只有预印本证据的条目应标 `status: Preprint`。每条保留 `source`，Workshop 不改标主会。当前目录仅收录实验室学生第一作者、且至少一位实验室导师共同署名的论文。导师名单来自 `_members/` 中 `group: Supervisors`（Yapeng Wang、Yuhuan Lu、Erli Lyu）；检查姓名时忽略大小写，以支持来源中的 YaPeng Wang 等写法。不自动导入导师论文全集。每条填写 `sort_date`（YYYY-MM-DD、YYYY-MM 或 YYYY，保留来源精度）与 `sort_date_basis`；页面会在同一年内按日期由新到旧排序。
+
+当前展示范围已按作者要求排除所有 2025 年条目；新增论文仍需同时满足实验室学生第一作者及实验室导师共同署名。

@@ -149,3 +149,5 @@ SAGA 详情页按作者要求移除架构图；改为并排显示作者提供的
 2026-10-21 作者最终决定恢复扩写前单段原版 intro（The Robotics and Intelligent Systems Lab (ROBIS) is based at Macao Polytechnic University 开头），取消扩写的五方向列表和加粗段落，照片顶部对齐继续保留。
 
 2026-10-21 作者最终收录规则：实验室成员第一作者，且至少一位列入 Supervisors 的导师共同署名（Yapeng Wang、Yuhuan Lu、Erli Lyu）。姓名比较忽略大小写，不改写来源作者列表。现有目录筛为 27 条；本轮删除 lswoa, rwoa, lsewoa, mrbmo-preprint, adaptive-pso。Platforms 页 Chironix 按钮下方整张 jqr2 展示照片已移除；jqr2 仍保留在首页轮播与 Chironix 项目详情中。
+
+2026-10-21 作者要求移除全部 2025 年论文；本轮删除 ahrrt, tswoa，当前目录共 25 条，继续满足实验室一作 + 实验室导师共同署名。
