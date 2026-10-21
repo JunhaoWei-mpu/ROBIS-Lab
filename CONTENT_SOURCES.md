@@ -79,3 +79,14 @@
 - 导师个人论文已按作者要求从成果列表及研究方向关联中移除。当前 5 篇为团队相关共同成果；首页取消独立 Selected publications 区块。
 - 本轮重新查看 HKUST Aerial Robotics、Kumar Lab 的标题层级，采用清楚的页面标题 / 栏目标题 / 项目标题三级结构，字体大小、字重与分隔线分别设置。
 - 作者随后明确确认 Yuhuan Lu 为 Assistant Professor；采用此职称并同步其英文简介，此确认取代此前因校方目录与个人主页差异而暂不显示职称的处理。首页与独立 Contact 页均按作者要求移除机构/地点三行。
+
+## CLCO 与圆形头像修订（2026-10-21）
+
+- 首页亮点按作者要求改为 ARIES-Mission++ → CLCO → SAGA。CLCO 的方法与应用概述核对校方论文页 https://research.mpu.edu.mo/en/publications/coordination-core-ligand-collaborative-optimizer-clco-a-chemistry/ 与代码分支 README；论文/作者/venue 继续只在 publications.yaml 维护。页面不添加未经核对的性能数字或实物验证。
+- CLCO 配图为原论文 Figure 3，出版社资源：https://ars.els-cdn.com/content/image/1-s2.0-S1474034626007846-gr3_lrg.jpg 。实际查看后等比压缩为 WebP，保留所有内容；图注明确论文来源及版权。
+- 参考作者指定 https://hypersec.research.st/people/5320 的圆形头像呈现，未使用其成员照片。ROBIS 人像沿用既有明确映射，仅调整 CSS 圆形显示、取景位置与白底源图留白；原照片不重绘、不改脸。
+- 按作者要求删除首页新闻来源提示文字；完整来源继续保存在维护数据与本文件中。
+
+- 最新作者修订：学生顺序为 Junhao Wei、Xuan Cheng、Long Liu，其余既定顺序保持；姓名显示黑色。首页 People 同时显示导师与研究学生全部 11 人。平台与研究设备图去掉人工灰色底板；最新 jqr1.png / uav3.png 已逐一查看并替换。
+- 作者提供 saga_fpv.gif，为仿真柱状场景的第一视角演示；动画保持源尺寸、全部画面内容与 24 秒总时长，不标注为实机飞行。首页及项目页使用优化动画 WebP，减少动态偏好下使用静态代表帧。
+- 参考页导航字体核对其 HTML 内嵌 @font-face 为 Roboto；本站自托管其 Latin 400/700 字体，不依赖访客浏览器请求参考站或字体 API。字库元数据确认为 Copyright 2011 Google Inc., Roboto Version 2.137; 2017, Apache License 2.0，许可证与来源保留在 assets/notices/。

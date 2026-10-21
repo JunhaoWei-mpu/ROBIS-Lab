@@ -1,0 +1,9 @@
+Roboto Latin webfont, regular 400 and bold 700.
+Copyright 2011 Google Inc. All Rights Reserved.
+Font metadata: Roboto Version 2.137; 2017. Apache License 2.0.
+Original project: https://github.com/googlefonts/roboto
+License text: roboto-license.txt
+Webfont source URLs (matching the requested reference navigation):
+https://hypersec.research.st/fonts/google-fonts/Roboto-400-7.woff2
+https://hypersec.research.st/fonts/google-fonts/Roboto-700-14.woff2
+Fonts are served from this site; visitors do not request the reference site.

@@ -1,4 +1,18 @@
 /* ROBIS Lab. Shared academic layout; Greene Lab Website Template content engine. */
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/roboto-latin-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/roboto-latin-700.woff2") format("woff2");
+}
 :root {
   --navy: #0b2f53;
   --cyan: #079ebc;
@@ -165,9 +179,10 @@ button {
   position: relative;
   display: block;
   padding: 12px 1px;
-  font-size: 14px;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
   line-height: 1.6;
-  font-weight: 500;
+  font-weight: 400;
   color: #3d4c59;
   text-decoration: none;
 }
@@ -505,6 +520,17 @@ button {
   margin: 12px 0;
   padding: 0;
 }
+.home-people-group {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 20px;
+}
+.home-member-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 14px;
+}
 .home-people li {
   display: flex;
   align-items: baseline;
@@ -684,7 +710,7 @@ button {
   border-bottom: 0;
 }
 .research-visual {
-  background: var(--pale);
+  background: transparent;
   padding: 26px;
   align-self: start;
   border-radius: var(--radius);
@@ -750,7 +776,7 @@ button {
   scroll-margin-top: 100px;
 }
 .platform-detail-image {
-  background: var(--pale);
+  background: transparent;
   height: 430px;
   border-radius: var(--radius);
   padding: 25px;
@@ -825,27 +851,38 @@ button {
   min-width: 0;
 }
 .person-photo {
-  height: 285px;
+  width: min(100%, 190px);
+  aspect-ratio: 1;
+  margin-inline: auto;
   display: block;
-  background: var(--pale);
-  border-radius: var(--radius);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 50%;
   overflow: hidden;
 }
 .person-photo img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  padding: 12px 12px 0;
+  object-fit: cover;
+  padding: 0;
 }
 .person-copy {
   padding-top: 20px;
+  text-align: center;
 }
 .person-copy h3 {
   font-size: 1.4rem;
   margin-bottom: 9px;
 }
 .person-copy h3 a {
+  color: #111;
   text-decoration: none;
+}
+.member-bio h1,
+.home-people li > a:first-child,
+.research-people a,
+.contact-person h3 {
+  color: #111;
 }
 .person-role {
   font-size: 13px !important;
@@ -887,12 +924,17 @@ button {
   align-items: start;
 }
 .member-portrait {
+  width: min(100%, 250px);
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+}
+.member-portrait img {
   width: 100%;
-  height: 365px;
-  object-fit: contain;
-  padding: 15px 15px 0;
-  background: var(--pale);
-  border-radius: var(--radius);
+  height: 100%;
+  object-fit: cover;
 }
 .prose {
   max-width: 800px;
@@ -1054,7 +1096,7 @@ button {
   overflow-wrap: anywhere;
 }
 .contact-aside {
-  background: var(--pale);
+  background: transparent;
   padding: 40px;
   border-radius: var(--radius);
 }
@@ -1156,7 +1198,7 @@ button {
   letter-spacing: 0;
 }
 .research-visual {
-  background: var(--pale);
+  background: transparent;
   padding: 22px;
 }
 .research-visual .research-number {
@@ -1189,7 +1231,7 @@ button {
   border-bottom: 2px solid var(--line);
 }
 .person-photo {
-  height: 245px;
+  width: min(100%, 190px);
 }
 .person-copy h3 {
   font-size: 22px;
@@ -1404,7 +1446,7 @@ button {
     padding-bottom: 10px;
   }
   .site-nav a {
-    font-size: 14px;
+    font-size: 16px;
     padding-block: 9px;
   }
   .has-menu-js .site-nav {
@@ -1554,14 +1596,14 @@ button {
     gap: 33px 28px;
   }
   .person-photo {
-    height: 240px;
+    width: min(100%, 180px);
   }
   .member-bio {
     grid-template-columns: 210px 1fr;
     gap: 30px;
   }
   .member-portrait {
-    height: 280px;
+    width: 210px;
   }
   .member-bio h1 {
     font-size: 32px;
@@ -1635,7 +1677,7 @@ button {
     display: grid;
   }
   .site-nav a {
-    font-size: 14px;
+    font-size: 16px;
     padding-block: 10px;
   }
   .site-nav a[aria-current]:after {
@@ -1922,13 +1964,14 @@ button {
     gap: 18px;
   }
   .person-photo {
-    height: 145px;
+    width: 105px;
   }
   .person-photo img {
-    padding: 5px 5px 0;
+    padding: 0;
   }
   .person-copy {
     padding-top: 0;
+    text-align: left;
   }
   .person-copy h3 {
     font-size: 21px;
@@ -1973,7 +2016,7 @@ button {
     margin-bottom: 28px;
   }
   .member-portrait {
-    height: 280px;
+    width: 225px;
   }
   .member-bio h1 {
     font-size: 33px;

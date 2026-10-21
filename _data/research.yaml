@@ -50,6 +50,8 @@
   - junhao-wei
   - erli-lyu
   image: chironix-demonstration
+  image_width: 1355
+  image_height: 895
   image_alt: Chironix X1 at an in-person platform demonstration
   home_summary: Robot arms, dual-arm coordination, mobile manipulation, and UAV–manipulator integration.
 - id: embodied
@@ -71,7 +73,7 @@
   - yifu-zhao
   - yapeng-wang
   - jiangyu-lai
-  image: chironix-x1
+  image: chironix-x1-20261021
   image_alt: Chironix mobile dual-arm engineering prototype
   home_summary: Visual grounding, task planning, teleoperation data, and imitation learning.
   projects:
@@ -100,3 +102,5 @@
   image: autonomous-uav-02
   image_alt: Autonomous UAV Platform 02 shown as a research hardware platform
   home_summary: Metaheuristic search, reinforcement learning, multi-agent decisions, and knowledge representation.
+  projects:
+  - clco

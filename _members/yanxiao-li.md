@@ -17,6 +17,9 @@ topics:
 - computing
 image_width: 600
 image_height: 840
+portrait_fit: contain
+portrait_padding: 5% 0 0
+portrait_zoom: 1.2
 ---
 
 Yanxiao Li obtained his bachelor’s degree in Data Science and Big Data Technology from Chengdu University and the University of Stirling in June 2025. Since September 2025, he has been pursuing a master’s degree in Computer Application Technology at Macao Polytechnic University. His research interests include metaheuristic algorithms, reinforcement learning for multi-agent systems, and integrated UAV–robotic arm systems.

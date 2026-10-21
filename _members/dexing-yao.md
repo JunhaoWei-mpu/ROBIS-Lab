@@ -16,6 +16,9 @@ topics:
 - aerial
 image_width: 600
 image_height: 676
+portrait_fit: contain
+portrait_padding: 6% 0 0
+portrait_zoom: 1.08
 ---
 
 Dexing Yao received his bachelor’s degree in Transportation Engineering (Railway Automation) from the School of Mechanical and Automation Engineering at Wuyi University in 2025. During his undergraduate studies, he participated in engineering competitions including RoboMaster and the National Undergraduate Electronic Design Contest. Since September 2025, he has been pursuing a master’s degree in Big Data and Internet of Things at Macau University of Science and Technology. His research interests include autonomous UAV navigation and humanoid robots.

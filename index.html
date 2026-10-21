@@ -5,6 +5,7 @@ description: Robotics and Intelligent Systems Lab, Faculty of Applied Sciences, 
   in aerial robotics, manipulation, embodied intelligence, and optimization.
 featured_projects:
 - aries-mission-pp
+- clco
 - saga
 ---
 <div class="container lab-home">
@@ -35,13 +36,15 @@ featured_projects:
         {% assign pub = site.data.publications | where: 'id', project.publication | first %}
         <article class="research-highlight{% if forloop.first %} research-highlight-featured{% endif %}">
           <a class="highlight-image" href="{{ project.url | relative_url }}" tabindex="-1" aria-hidden="true">
+            {% if project.home_still %}<picture><source media="(prefers-reduced-motion: reduce)" srcset="{{ project.home_still | relative_url }}">{% endif %}
             <img src="{{ project.home_image | relative_url }}" width="{{ project.home_image_width }}" height="{{ project.home_image_height }}" alt="{{ project.home_image_alt }}" loading="lazy">
+            {% if project.home_still %}</picture>{% endif %}
           </a>
           <div class="highlight-description">
             <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
             <p>{{ project.home_summary }}</p>
             {% if pub %}<p class="highlight-venue">{{ pub.venue }} · {{ pub.year }} · {{ pub.status }}</p>{% endif %}
-            <div class="academic-links"><a href="{{ project.url | relative_url }}">Project</a>{% if pub %}<a href="{{ pub.paper_url }}">{{ pub.paper_label }}</a>{% endif %}{% if project.code_url %}<a href="{{ project.code_url }}">Code</a>{% endif %}{% if project.benchmark_url %}<a href="{{ project.benchmark_url }}">Benchmark</a>{% endif %}</div>
+            <div class="academic-links"><a href="{{ project.url | relative_url }}">Project</a>{% if pub %}<a href="{{ pub.paper_url }}">{{ pub.paper_label }}</a>{% endif %}{% assign project_code = project.code_url | default: pub.code_url %}{% if project_code %}<a href="{{ project_code }}">Code</a>{% endif %}{% if project.benchmark_url %}<a href="{{ project.benchmark_url }}">Benchmark</a>{% endif %}</div>
           </div>
         </article>
         {% endfor %}
@@ -65,9 +68,11 @@ featured_projects:
         {% include news-list.html limit=6 compact=true %}
       </section>
       <section class="home-section home-people" aria-labelledby="people-title">
-        <div class="academic-section-heading"><h2 id="people-title">Supervisors</h2></div>
-
-        <ul>{% assign supervisors = site.members | where: 'group', 'Supervisors' | sort: 'order' %}{% for member in supervisors %}<li><a href="{{ member.url | relative_url }}">{{ member.name }}</a>{% if member.homepage %}<a class="faculty-homepage" href="{{ member.homepage }}">Homepage</a>{% endif %}</li>{% endfor %}</ul>
+        <div class="academic-section-heading"><h2 id="people-title">People</h2></div>
+        {% assign groups = 'Supervisors,Research Students' | split: ',' %}{% for group in groups %}
+        <h3 class="home-people-group">{{ group }}</h3>
+        <ul class="home-member-list">{% assign members = site.members | where: 'group', group | sort: 'order' %}{% for member in members %}<li><a href="{{ member.url | relative_url }}">{{ member.name }}</a></li>{% endfor %}</ul>
+        {% endfor %}
         <a class="directory-link" href="{{ '/people/' | relative_url }}">View all members</a>
       </section>
       <section class="home-section home-contact" aria-labelledby="contact-title">

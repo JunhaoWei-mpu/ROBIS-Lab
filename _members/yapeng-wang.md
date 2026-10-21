@@ -20,6 +20,7 @@ lab_role: Supervisor
 lab_role_source: Author confirmation, 2026-10-21
 image_width: 600
 image_height: 900
+focal_point: 50% 32%
 ---
 
 Yapeng Wang received a BEng in Telecommunication Engineering and a BSc in Computer and Its Applications from North China Electric Power University in 1998, followed by an MSc in Internet Computing in 2002 and a PhD in Electronic Engineering in 2007 from Queen Mary University of London. He joined the Faculty of Applied Sciences at Macao Polytechnic University in 2021 as an Associate Professor. His research interests include UAV and robot path planning, applied artificial intelligence, AI agents and large language model applications, wireless communications, speech recognition, natural language processing, and medical image analysis.

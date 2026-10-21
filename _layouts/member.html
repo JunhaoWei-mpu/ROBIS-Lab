@@ -4,7 +4,7 @@ layout: default
 <div class="container member-page">
   <a class="back-link" href="{{ '/people/' | relative_url }}">← All people</a>
   <div class="member-bio">
-    <div>{% if page.image and page.initials == nil %}<img class="member-portrait" src="{{ page.image | relative_url }}" width="{{ page.image_width | default: 600 }}" height="{{ page.image_height | default: 750 }}" alt="{{ page.name }}" style="object-position:{{ page.focal_point | default: '50% 22%' }}">{% else %}<div class="member-portrait portrait-placeholder" aria-label="{{ page.name }} initials">
+    <div>{% if page.image and page.initials == nil %}<div class="member-portrait"><img src="{{ page.image | relative_url }}" width="{{ page.image_width | default: 600 }}" height="{{ page.image_height | default: 750 }}" alt="{{ page.name }}" style="transform:scale({{ page.portrait_zoom | default: 1 }});transform-origin:50% 25%;object-fit:{{ page.portrait_fit | default: 'cover' }};padding:{{ page.portrait_padding | default: '0' }};object-position:{{ page.focal_point | default: '50% 0%' }}"></div>{% else %}<div class="member-portrait portrait-placeholder" aria-label="{{ page.name }} initials">
 <span class="portrait-initials">{{ page.initials }}</span>
 </div>{% endif %}</div>
     <div class="prose">

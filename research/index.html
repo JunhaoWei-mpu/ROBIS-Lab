@@ -9,7 +9,7 @@ intro: "Our research covers aerial navigation and mission planning, robotic mani
 <div class="container research-details">{% for topic in site.data.research %}<article class="research-detail" id="{{ topic.id }}">
 <div class="research-visual">
 <span class="research-number">0{{ forloop.index }}</span>
-<img src="{{ '/assets/images/platforms/' | append: topic.image | append: '.webp' | relative_url }}" alt="{{ topic.image_alt }}" width="1600" height="1200" loading="lazy">
+{% assign research_platform = site.data.platforms | where: 'image', topic.image | first %}<img src="{{ '/assets/images/platforms/' | append: topic.image | append: '.webp' | relative_url }}" alt="{{ topic.image_alt }}" width="{{ research_platform.width | default: topic.image_width }}" height="{{ research_platform.height | default: topic.image_height }}" loading="lazy">
 <p class="image-note">ROBIS research hardware</p>
 </div>
 <div>
@@ -21,6 +21,6 @@ intro: "Our research covers aerial navigation and mission planning, robotic mani
 {% if topic.publications.size > 0 %}<h3>Related publications</h3>
 <div class="related-papers">{% for id in topic.publications %}{% assign pub = site.data.publications | where: 'id', id | first %}<a href="{{ '/publications/#' | append: id | relative_url }}">{{ pub.title }} →</a>{% endfor %}</div>{% endif %}{% if topic.projects.size > 0 %}<h3>Projects</h3><div class="text-links">{% for slug in topic.projects %}{% assign project = site.projects | where: 'slug', slug | first %}<a href="{{ project.url | relative_url }}">{{ project.title }}</a>{% endfor %}</div>{% endif %}{% if topic.platforms.size > 0 %}<h3>Related platforms</h3>
 <div class="text-links">{% for id in topic.platforms %}{% assign platform = site.data.platforms | where: 'id', id | first %}<a href="{{ platform.url | relative_url }}">{{ platform.name }} →</a>{% endfor %}</div>{% endif %}<h3>People</h3>
-<div class="text-links">{% for slug in topic.members %}{% assign member = site.members | where: 'slug', slug | first %}<a href="{{ member.url | relative_url }}">{{ member.name }}</a>{% endfor %}</div>
+<div class="text-links research-people">{% for slug in topic.members %}{% assign member = site.members | where: 'slug', slug | first %}<a href="{{ member.url | relative_url }}">{{ member.name }}</a>{% endfor %}</div>
 </div>
 </article>{% endfor %}</div>

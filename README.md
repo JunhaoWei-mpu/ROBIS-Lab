@@ -41,7 +41,7 @@ python3 scripts/check_site.py _site /ROBIS-Lab
 | 导航 | `_data/navigation.yaml` | 标题与内部路径。 |
 | 视觉与交互 | `assets/css/site.css`、`assets/js/site.js` | 配色、响应式布局、手机菜单、论文筛选。 |
 
-方向 ID：`aerial`、`manipulation`、`embodied`、`computing`。添加成员时，只有核实的个人主页才填写 `homepage`；没有照片可填写 `initials` 并省略 `image`。不要虚构职称、主页或实验室角色。照片采用 `contain`，可通过 `focal_point` 调整未来需要的裁切焦点。
+方向 ID：`aerial`、`manipulation`、`embodied`、`computing`。添加成员时，只有核实的个人主页才填写 `homepage`；没有照片可填写 `initials` 并省略 `image`。不要虚构职称、主页或实验室角色。成员照片使用圆形容器，`focal_point` 控制取景位置；白底照片可设置 `portrait_fit: contain`、`portrait_padding` 保留头顶留白，`portrait_zoom` 调整人物大小。每次替换照片后查看列表与详情页，不能裁掉头部。
 
 论文 `status` 使用真实状态，例如 `Accepted` 或 `Published`。`paper_label: Preprint` 明确 arXiv 的链接性质；有真实代码库时才填写 `code_url`。作者全名来自原论文/Crossref，否则保留来源缩写。成员加入前的成果也可收录，但页面按成员成果表述。
 
@@ -75,14 +75,18 @@ gh run list --workflow pages.yml --limit 3
 
 首页使用学术实验室结构：顶部 ROBIS 与 MPU 学院组合标识 → 实验室全名和简介 → 研究亮点与新闻 → 研究方向与平台入口；侧栏提供导师、完整团队与联系入口。`index.html` front matter 的 `featured_projects` 控制研究亮点；详情来自 `_projects/`、`_data/publications.yaml`，不重复维护录用信息。MPU 标识位于 `_includes/header.html` 的 masthead，在手机端也显示。
 
-CSS/JS 链接带构建时间版本参数，部署后会请求新版资源。最新截图保存在仓库旁 `../robis-preview/revision-3/`。
+CSS/JS 链接带构建时间版本参数，部署后会请求新版资源。最新截图保存在仓库旁 `../robis-preview/revision-4/`。
 
 ## 2026-10-21 内容调整
 
-- 首页研究亮点由 `index.html` 的 `featured_projects` 控制，现为 ARIES-Mission++ 和 SAGA。ARIES-Mission++ 的代码、benchmark、简介及配图在 `_projects/aries-mission-pp.md`；未确认的论文 venue/status 不填写。
+- 首页研究亮点由 `index.html` 的 `featured_projects` 控制，现为 ARIES-Mission++、CLCO 和 SAGA。ARIES-Mission++ 的代码、benchmark、简介及配图在 `_projects/aries-mission-pp.md`；未确认的论文 venue/status 不填写。
 - 首页移除 Selected publications 区块；`_data/publications.yaml` 保留团队相关共同论文，不收录导师个人论文目录。
 - 联系人由 `_data/contact.yaml` 的 `member` 选择，姓名、学校职称、邮箱和主页从该成员资料读取，现为 Yapeng Wang。
 - 人员：Yapeng Wang、Yuhuan Lu、Erli Lyu 为 Supervisors；Long Liu 与 Xuan Cheng 为 PhD Student。导师的实验室角色与学校职称分别维护。
 - Yuhuan Lu 的学校职称由作者确认为 Assistant Professor，已同步到人员列表和完整简介。
 - 顶部标识采用作者提供的 `fca.png`，公开路径为 `assets/images/brand/mpu-fca-logo.png`；不再附加独立学院文字。
 - Yuhuan Lu、Dexing Yao 使用本轮本地新照片，文件名含日期避免旧图缓存；Xuan Cheng 使用 `xuancheng.jpg`。
+
+- 首页 People 覆盖导师和研究学生全部 11 人；导师顺序及学生顺序由各成员 `order` 控制，Xuan Cheng 在 Long Liu 前。
+- SAGA 首页动画在 `_projects/saga.md` 的 `home_image`，`home_still` 指定减少动态效果时的静态替代。静态图取自原动画第 80 帧；原始 GIF 保留仓库外。
+- 导航使用本站自托管 Roboto，文件在 `assets/fonts/`，许可证在 `assets/notices/`。平台/研究设备图片采用白色页面自然显示，无额外灰底。

@@ -15,6 +15,9 @@ topics:
 - embodied
 image_width: 600
 image_height: 800
+portrait_fit: contain
+portrait_padding: 5% 0 0
+portrait_zoom: 1.16
 ---
 
 Jiangyu Lai received his Bachelor’s degree in Unmanned Aerial Vehicle System Engineering from Beijing Institute of Technology, Zhuhai. He is currently a master’s student majoring in Environmental Intelligence at Macao Polytechnic University. His research interests lie in UAV autonomous navigation, autonomous mission generation and planning.

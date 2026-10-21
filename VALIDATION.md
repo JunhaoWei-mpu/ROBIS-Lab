@@ -62,3 +62,15 @@
 - 论文列表保留 5 篇团队相关共同成果，移除 4 篇导师个人论文及其研究方向关联。ARIES-Mission++ 未虚构论文状态，其代码仓库和 benchmark release 均已核对。
 - 实际查看首页桌面/手机、People、Contact 截图。截图位于 `../robis-preview/revision-3/`，不提交公开源码。
 - 本次 push 后应以最新提交对应的 Actions / github-pages deployment 成功及线上 HTTP、浏览器核验作为发布完成依据。
+
+## 最后版式与素材修订（2026-10-21）
+
+- 生产构建和路径检查通过：24 个 HTML 页面（新增 CLCO 项目页）。
+- 首页亮点顺序 ARIES-Mission++ → CLCO → SAGA；People 包含全部 11 人，导师和学生分组；学生前三位为 Junhao Wei → Xuan Cheng → Long Liu。
+- 人名黑色、圆形头像、逐人取景；无人工方形头像底板或平台/研究设备灰底。Yuhuan Lu 的 Assistant Professor 已由作者确认。
+- SAGA 动画使用作者 saga_fpv.gif，原尺寸和 24 秒总时长保持（原 GIF 240 帧，重复画面合并后 WebP 237 帧），优化为约 696 KB；减少动态效果时自动切换静态代表帧。
+- 更新 jqr1 / UAV3 后重新查看原件，等比编码并同步真实尺寸，文件名带日期；UAV3 只裁完全透明空边。
+- 导航使用参考页同款 Roboto Latin 400/700，自托管字体及 Apache 2.0 许可证；访客不依赖外站字体。
+- 最新截图在 `../robis-preview/revision-4/`；线上部署记录将在该目录 `DEPLOYMENT.md` 保存。
+
+- 最终 Chrome 验证：14 个页面 × 1440/768/390 px，共 42 次，无溢出、坏图或控制台错误；手机菜单、论文搜索/筛选/空结果、成员详情、黑色姓名、圆形框、人员顺序、完整首页团队名单、Roboto 加载及减少动态静态替代均通过。
