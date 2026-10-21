@@ -73,7 +73,7 @@ featured_projects:
       </section>
       <section class="home-section home-contact" aria-labelledby="contact-title">
         <div class="academic-section-heading"><h2 id="contact-title">Contact</h2></div>
-        {% assign contact = site.members | where: 'slug', site.data.contact.member | first %}<p>{{ site.data.contact.unit }}<br>{{ contact.institution }}<br>{{ site.data.contact.city }}</p>
+        {% assign contact = site.members | where: 'slug', site.data.contact.member | first %}
         <p>{{ contact.name }}<br><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></p>
       </section>
     </aside>
