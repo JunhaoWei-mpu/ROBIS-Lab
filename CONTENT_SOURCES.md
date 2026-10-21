@@ -78,3 +78,4 @@
 - ARIES-Mission++：https://github.com/JunhaoWei-mpu/ARIES-Mission-pp ，采用公开 commit `7162d6a4c5663137e7c5dbc7d2f733d239a0fb47` 的 README 与系统总览图。页面只概述视觉语言定位、多无人机能量约束规划、任务文件导出与公开资源；不推断论文作者表、venue、录用状态，不把 SITL 写成实机验证。图像 MIT 版权说明同时保留在公开资源目录。
 - 导师个人论文已按作者要求从成果列表及研究方向关联中移除。当前 5 篇为团队相关共同成果；首页取消独立 Selected publications 区块。
 - 本轮重新查看 HKUST Aerial Robotics、Kumar Lab 的标题层级，采用清楚的页面标题 / 栏目标题 / 项目标题三级结构，字体大小、字重与分隔线分别设置。
+- 作者随后明确确认 Yuhuan Lu 为 Assistant Professor；采用此职称并同步其英文简介，此确认取代此前因校方目录与个人主页差异而暂不显示职称的处理。首页与独立 Contact 页均按作者要求移除机构/地点三行。

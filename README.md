@@ -83,5 +83,6 @@ CSS/JS 链接带构建时间版本参数，部署后会请求新版资源。最�
 - 首页移除 Selected publications 区块；`_data/publications.yaml` 保留团队相关共同论文，不收录导师个人论文目录。
 - 联系人由 `_data/contact.yaml` 的 `member` 选择，姓名、学校职称、邮箱和主页从该成员资料读取，现为 Yapeng Wang。
 - 人员：Yapeng Wang、Yuhuan Lu、Erli Lyu 为 Supervisors；Long Liu 与 Xuan Cheng 为 PhD Student。导师的实验室角色与学校职称分别维护。
+- Yuhuan Lu 的学校职称由作者确认为 Assistant Professor，已同步到人员列表和完整简介。
 - 顶部标识采用作者提供的 `fca.png`，公开路径为 `assets/images/brand/mpu-fca-logo.png`；不再附加独立学院文字。
 - Yuhuan Lu、Dexing Yao 使用本轮本地新照片，文件名含日期避免旧图缓存；Xuan Cheng 使用 `xuancheng.jpg`。
