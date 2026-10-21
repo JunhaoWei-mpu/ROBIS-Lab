@@ -1,30 +1,42 @@
 ---
 title: Contact
 nav: Contact
-description: "Contact ROBIS Lab at the Faculty of Applied Sciences, Macao Polytechnic University, Macao, China."
-intro: "Connect with us about robotics, intelligent systems, and research collaboration."
+description: "Contact Yapeng Wang at ROBIS Lab about prospective student opportunities, robotics research, and collaboration."
+intro: "Get in touch about studying, collaborating, or working on robotics and intelligent systems."
 ---
 {% include page-heading.html eyebrow='Contact' %}
 {% assign contact = site.members | where: 'slug', site.data.contact.member | first %}
-<div class="container contact-grid">
-<div class="contact-details">
-<h2>ROBIS Lab</h2>
-<p class="lead">Robotics and Intelligent Systems Lab</p>
-<a class="text-link" href="https://www.mpu.edu.mo/">University website ↗</a>
-<div class="contact-person">
-<p class="eyebrow">Contact person</p>
-<h3>{{ contact.name }}</h3>
-<p>{{ contact.role }} · {{ contact.institution }}</p>
-<a class="contact-email" href="mailto:{{ contact.email }}">{{ contact.email }}</a>
-<p>
-<a class="text-link" href="{{ contact.homepage }}">Personal homepage ↗</a>
-</p>
-</div>
-</div>
-<div class="contact-aside">
-<img src="{{ '/assets/images/brand/mpu-logo.svg' | relative_url }}" alt="Macao Polytechnic University" width="989" height="251">
-<h2>Research at ROBIS Lab</h2>
-<p>Autonomous aerial robotics.<br>Robotic manipulation.<br>Embodied intelligence.<br>Intelligent computing.</p>
-<a class="button button-outline" href="{{ '/research/' | relative_url }}">Explore our research →</a>
-</div>
+<div class="container contact-page">
+  <section class="contact-overview" aria-labelledby="contact-welcome">
+    <div class="contact-intro">
+      <h2 id="contact-welcome">Work with ROBIS Lab</h2>
+      <p>We welcome enquiries from students, researchers, and engineers interested in autonomous robots and intelligent systems. Our work brings together aerial autonomy, robotic manipulation, embodied intelligence, optimization, and UAV communications.</p>
+      <p>To discuss a research idea or a potential opportunity, please write to Yapeng Wang with a brief introduction and the topic you would like to explore.</p>
+      <div class="text-links"><a href="{{ '/research/' | relative_url }}">Research areas →</a><a href="{{ '/people/' | relative_url }}">Meet our team →</a></div>
+    </div>
+    <aside class="contact-person-panel" aria-label="Research contact">
+      <img class="contact-portrait" src="{{ contact.image | relative_url }}" width="{{ contact.image_width }}" height="{{ contact.image_height }}" alt="{{ contact.name }}" loading="lazy">
+      <div><p class="eyebrow">Research enquiries</p><h2>{{ contact.name }}</h2><p>{{ contact.role }}</p>
+      <a class="contact-email" href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+      <div class="text-links"><a href="{{ contact.homepage }}">Official profile ↗</a><a href="{{ contact.url | relative_url }}">Biography →</a></div></div>
+    </aside>
+  </section>
+  <div class="contact-enquiries">
+    <section aria-labelledby="student-enquiries">
+      <h2 id="student-enquiries">Prospective students</h2>
+      <p>If you are interested in master's or doctoral research related to the lab, please introduce your academic background and the questions you would like to investigate.</p>
+      <p>A useful first email includes:</p>
+      <ul><li>Your current degree and academic background.</li><li>The research direction that interests you and why.</li><li>A brief CV and links to relevant projects, code, or publications, if available.</li></ul>
+      <a class="text-link" href="mailto:{{ contact.email }}?subject=ROBIS%20Lab%20%E2%80%94%20prospective%20student%20enquiry">Email about research study →</a>
+    </section>
+    <section aria-labelledby="collaboration-enquiries">
+      <h2 id="collaboration-enquiries">Research collaboration</h2>
+      <p>We are interested in discussing shared research problems in UAV navigation and mission planning, robotic manipulation, learning and optimization, and communication-aware autonomous systems.</p>
+      <p>Tell us about the problem you are working on, any relevant systems or results, and the kind of collaboration you have in mind. Links to a paper, project, or technical demonstration can help start the discussion.</p>
+      <a class="text-link" href="mailto:{{ contact.email }}?subject=ROBIS%20Lab%20%E2%80%94%20research%20collaboration">Discuss a collaboration →</a>
+    </section>
+  </div>
+  <section class="contact-work" aria-labelledby="contact-explore"><h2 id="contact-explore">Explore our work</h2>
+    <div><a href="{{ '/research/' | relative_url }}">Research <span>Questions and technical directions →</span></a><a href="{{ '/platforms/' | relative_url }}">Platforms <span>Our robots and UAV systems →</span></a><a href="{{ '/publications/' | relative_url }}">Publications <span>Papers and preprints →</span></a></div>
+  </section>
 </div>

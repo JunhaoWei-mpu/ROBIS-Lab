@@ -2,7 +2,7 @@
 title: Publications
 nav: Publications
 description: "Search publications by ROBIS Lab members in aerial robotics, manipulation, embodied intelligence, optimization, and knowledge representation."
-intro: "Publications by our research students, organized by year and research topic."
+intro: "Publications led by our research students, organized by year."
 ---
 {% include page-heading.html eyebrow='Publications' %}
 <div class="container publications-content">
@@ -22,5 +22,5 @@ intro: "Publications by our research students, organized by year and research to
 </p>
 <p id="publication-empty" class="empty-state" hidden>No publications match your search. Try another keyword or research direction.</p>
   {% assign years = site.data.publications | group_by: 'year' | sort: 'name' | reverse %}{% for year in years %}<section class="publication-year" data-year>
-<h2>{{ year.name }}</h2>{% for pub in year.items %}{% include citation.html pub=pub %}{% endfor %}</section>{% endfor %}
+<h2>{{ year.name }}</h2>{% assign ordered_publications = year.items | sort: 'sort_date' | reverse %}{% for pub in ordered_publications %}{% include citation.html pub=pub %}{% endfor %}</section>{% endfor %}
 </div>

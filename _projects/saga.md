@@ -11,9 +11,10 @@ home_image_width: 618
 home_image_height: 344
 home_image_alt: Animated first-person view of SAGA navigation in a simulated pillar environment
 ---
-<figure class="figure"><picture><source media="(prefers-reduced-motion: reduce)" srcset="{{ '/assets/images/projects/saga-fpv-poster.webp' | relative_url }}"><img src="{{ '/assets/images/projects/saga-fpv.webp' | relative_url }}" width="618" height="344" alt="SAGA first-person navigation animation in a simulated pillar environment" loading="lazy"></picture><figcaption>SAGA first-person simulation demonstration.</figcaption></figure>
-
-{% include figure.html image='/assets/images/projects/saga-framework.webp' width=1647 height=808 alt='Published SAGA architecture with anchor-aligned feature encoding, self-attention, goal modulation, and trajectory decoding' caption='SAGA architecture. Source: Wei et al., arXiv:2605.02301, Figure 1.' %}
+<div class="saga-demonstrations">
+<figure><picture><source media="(prefers-reduced-motion: reduce)" srcset="{{ '/assets/images/projects/saga-fpv-poster.webp' | relative_url }}"><img src="{{ '/assets/images/projects/saga-fpv.webp' | relative_url }}" width="618" height="344" alt="SAGA first-person navigation animation in a simulated pillar environment" loading="lazy"></picture><figcaption>First-person view</figcaption></figure>
+<figure><picture><source media="(prefers-reduced-motion: reduce)" srcset="{{ '/assets/images/projects/saga-top-poster.webp' | relative_url }}"><img src="{{ '/assets/images/projects/saga-top.gif' | relative_url }}" width="800" height="704" alt="SAGA top-view simulation showing the UAV trajectory among obstacles" loading="lazy"></picture><figcaption>Top view</figcaption></figure>
+</div>
 
 ## Research question
 

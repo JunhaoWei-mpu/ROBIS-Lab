@@ -119,3 +119,25 @@
 - 首页轮播顺序改为 展示1 → 机器人展示(jqr2) → Open day → WAYS。取消鼠标悬停和控件焦点导致的隐式暂停；保留 Pause/Play、Next、后台标签暂停及系统减少动态效果支持。
 
 2026-10-21 作者补充确认：Real-Validated UAV Audition Under Rotor Ego-Noise for Low-False-Alarm Human Detection 录用于 NCMMSC 2026；其 venue 已从 arXiv 改为 NCMMSC 2026、status 改为 Accepted，原 arXiv 链接仍作为 Preprint。
+
+2026-10-21 作者补充确认：HonestAffinity: Leak-Aware Evaluation of Protein and Pocket Priors for Binding Affinity Prediction 录用于 IEEE BIBM 2026；保留 Intelligent Computing and Optimization 分类及 arXiv Preprint 链接。
+
+
+## 2026-10-21：以作者提供的 Scholar 40 条清单复核，限定实验室一作
+
+最新收录口径：第一作者必须出现在本站 `_members/` 中；导师个人论文仍不导入。原 42 条候选删除 12 条外部一作记录，补上作者 Scholar 清单中遗漏的 AHRRT、MRBMO 预印本后，当前 **32 条**。
+
+作者直接提供的 Scholar 清单及后续确认用于更新：UAV Audition → NCMMSC 2026 / Accepted；HonestAffinity → IEEE BIBM 2026 / Accepted；FleetGuard → IEEE CSCloud 2026 / Accepted。各条 arXiv 链接仍标为 Preprint，不将预印本平台当会议 venue。
+
+Scholar 直连本轮再次返回不可访问，清单内容由作者直接提供；未声称成功读取受限的 Scholar 页面。AHRRT 的日期、作者与链接进一步核对 Preprints.org 原文 https://www.preprints.org/manuscript/202511.1805 （2025-11-25）。
+
+MRBMO 的 Preprints.org 版本 https://www.preprints.org/manuscript/202502.0188 （2025-02-04）第一作者为 Junhao Wei，明确以 Preprint 条目收录。Symmetry 正式版第一作者为 Baili Lu，依照本轮规则移除；不把预印本的作者顺序套用到正式期刊条目，也不将两个版本重复计数。
+
+每条新增 `sort_date` 和 `sort_date_basis`，每年由新到旧排列。优先使用可核实的 online / proceedings 日期；只有月份或年份时保留原精度。无明确录用日期的 accepted 稿使用预印本首次公开日期排序，不编造录用日。CLCO 用作者 2026-07 的公开出版更新月份（而非未来的 November 印刷卷期）；RAWA-RHP 用出版机构的 2026-10-13 available-online 日期。年份为书目引用年份，Ad Hoc Networks 保留 2027。
+
+本轮删除的外部一作 ID：pwoa, askssa-cnn-bilstm, llm-writing-assessment, mobi-depth, pamk-thymic-necroptosis, att-bilstm-xgboost, gwoa, mrbmo, uav-public-administration, pamk-hepatoprotection, pamk-intestinal-injury, credit-card-fraud.
+
+
+2026-10-21 展示调整：主页扩写实验室研究问题与实物平台介绍，五个研究方向加粗。Contact 参考 HyperSec 的导师联系与 Join us 入口，加入学生咨询和合作说明、Yapeng Wang 头像及官方主页、mailto 邮件链接；未声明已确认的空缺岗位，不复刻需要服务端的表单，不增加未核实电话和房间地址。来源 https://hypersec.research.st/ 、https://hypersec.research.st/contact_form 、https://fca-portal.mpu.edu.mo/profile/yapengwang 。
+
+SAGA 详情页按作者要求移除架构图；改为并排显示作者提供的 saga_fpv.gif 与 saga_top.gif。两个动画分别保留完整视角与原始时间，不把模拟动画标成实机实验；提供静态帧支持减少动态效果偏好。原始素材保留；FPV 网站使用压缩后的 WebP，俯视图采用完整 1 MB GIF（比重编码 WebP 更小），并提供 WebP 静态封面。
