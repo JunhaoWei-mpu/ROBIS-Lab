@@ -75,8 +75,8 @@
   - yifu-zhao
   - yapeng-wang
   - jiangyu-lai
-  image: chironix-x1-ac2286da
-  image_alt: Chironix mobile dual-arm engineering prototype
+  image: aerial-manipulation-20261021
+  image_alt: Aerial Manipulation Platform combining a UAV with an integrated robotic arm
   home_summary: Visual grounding, task planning, teleoperation data, and imitation learning.
   projects:
   - aries-mission-pp
@@ -127,6 +127,11 @@
   - xuan-cheng
   - long-liu
   image: autonomous-uav-02
-  image_alt: Autonomous UAV research platform
+  image_alt: Spatial UAV signal-strength predictions at multiple flight altitudes, from Long Liu and colleagues’
+    PIFE-XGBoost study
   home_summary: UAV wireless communication, signal prediction, satellite/NR5G signal processing, and AI-driven multi-UAV
     planning.
+  image_path: /assets/images/research/uav-signal-prediction.webp
+  image_width: 1584
+  image_height: 1208
+  image_source: https://doi.org/10.3390/math14081399

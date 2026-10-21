@@ -98,3 +98,8 @@ CSS/JS 链接带构建时间版本参数，部署后会请求新版资源。最�
 - 导航与正文统一为系统 Arial / Helvetica 字体，不再使用独立 Roboto。
 - Research 展示五个方向的介绍、技术重点与配图，不显示 People、相关论文/项目/平台列表或图片说明。新增 UAV Communications and Networked Systems 概括 UAV 通信、信号预测、低轨卫星/NR5G 和多无人机规划。
 - 首页研究亮点统一左图右文，不显示发表状态；完整 venue/status 在 Publications 页维护。新闻使用 🎉，来源保存在数据文件，访客页面不显示 Member update。
+
+
+首页与轮播维护：`index.html` 保存实验室介绍和首页研究生显示数量（`home_limit`，当前四位）；`_data/hero.yaml` 的条目顺序即轮播顺序。页脚并排 logo 位于 `_includes/footer.html`。研究方向图在 `_data/research.yaml` 中修改 `image_path`（完整路径）或 `image`（平台图片文件名，不带后缀），同步写入准确尺寸和 alt。
+
+论文只修改 `_data/publications.yaml`。正式出版与预印本为同一篇时只保留一个条目：`paper_url` 指向正式 DOI，`preprint_url` 可保存 arXiv 链接；只有预印本证据的条目应标 `status: Preprint`。每条保留 `source`，Workshop 不改标主会。当前目录收录学生署名论文，不自动导入导师论文全集。

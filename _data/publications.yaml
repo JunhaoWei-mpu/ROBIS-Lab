@@ -1,3 +1,23 @@
+- id: radio-map-reconstruction
+  title: Multi-fidelity Gaussian process learning for 3D urban radio map reconstruction from sparse UAV measurements
+  authors:
+  - Xuan Cheng
+  - YaPeng Wang
+  - DingCheng Yang
+  - Benjamin K. Ng
+  - Sio-Kei Im
+  - Xu Yang
+  year: 2027
+  venue: Ad Hoc Networks
+  status: In press
+  topics:
+  - communications
+  - computing
+  paper_url: https://doi.org/10.1016/j.adhoc.2026.104392
+  paper_label: Paper
+  source:
+  - https://api.crossref.org/works/10.1016/j.adhoc.2026.104392
+  - https://orcid.org/0009-0004-3137-6649
 - id: aries-mission2
   title: 'ARIES-Mission2: A Zero-Shot Vision-Language-Action Framework for Fast Large-Scale Aerial Mission Generation'
   authors:
@@ -99,6 +119,73 @@
   - https://api.crossref.org/works/10.1016/j.aei.2026.105092
   - https://junhaowei-mpu.github.io/
   code_url: https://github.com/JunhaoWei-mpu/ROBIS-Lab/tree/Coordination-Core-Ligand-Collaborative-Optimizer-(CLCO)
+- id: rawa-rhp
+  title: 'RAWA-RHP: Residual-State Constrained Insertion for Wind-Affected UAV Infrastructure Inspection'
+  authors:
+  - Haochen Li
+  - Junhao Wei
+  - Dexing Yao
+  - Yifu Zhao
+  - Yanxiao Li
+  - Zhaoyan Mai
+  - Jiamu Yu
+  - Baili Lu
+  - Sio-Kei Im
+  - Xu Yang
+  - Yapeng Wang
+  year: 2026
+  venue: Results in Engineering
+  status: In press
+  topics:
+  - aerial
+  paper_url: https://doi.org/10.1016/j.rineng.2026.113481
+  paper_label: Paper
+  source:
+  - https://api.crossref.org/works/10.1016/j.rineng.2026.113481
+  - https://www.sciencedirect.com/science/article/pii/S2590123026044920
+- id: leo-channel-prediction
+  title: A Prediction Method for LEO Satellite Channels Under Channel Aging
+  authors:
+  - Xuan Cheng
+  - Long Liu
+  - Yapeng Wang
+  - Lu Huang
+  - Dingcheng Yang
+  - Sio-Kei Im
+  - Xu Yang
+  year: 2026
+  venue: IEEE Access
+  status: Published
+  topics:
+  - communications
+  - computing
+  paper_url: https://doi.org/10.1109/access.2026.3670819
+  paper_label: Paper
+  source:
+  - https://api.crossref.org/works/10.1109/access.2026.3670819
+  - https://research.mpu.edu.mo/en/publications/a-prediction-method-for-leo-satellite-channels-under-channel-agin/
+- id: uav-signal-prediction
+  title: Research on UAV 3D Airspace Signal Strength Prediction Based on Physical Perception Feature Engineering
+  authors:
+  - Long Liu
+  - Yapeng Wang
+  - Xu Yang
+  - Sio-Kei Im
+  - Xuan Cheng
+  - Lu Huang
+  - Jiaqi Chen
+  - Heng Guan
+  year: 2026
+  venue: Mathematics
+  status: Published
+  topics:
+  - communications
+  - computing
+  paper_url: https://doi.org/10.3390/math14081399
+  paper_label: Paper
+  source:
+  - https://api.crossref.org/works/10.3390/math14081399
+  - https://www.mdpi.com/2227-7390/14/8/1399
 - id: dhcrwoa
   title: 'DHCRWOA: adaptive whale optimization algorithm with Cauchy-Rayleigh distribution for numerical and engineering
     design optimization'
@@ -121,3 +208,764 @@
   source:
   - https://api.crossref.org/works/10.1038/s41598-026-49084-z
   - https://junhaowei-mpu.github.io/
+- id: hlwoa
+  title: 'HLWOA: An Enhanced Whale Optimization Algorithm for UAV Relay Communication Deployment'
+  authors:
+  - Haochen Li
+  - Junhao Wei
+  - Yifu Zhao
+  - Yanxiao Li
+  - Dexing Yao
+  - Zhenhong Peng
+  - Zhaoyan Mai
+  - Jiamu Yu
+  - Xu Yang
+  - Yapeng Wang
+  year: 2026
+  venue: EITCE 2026
+  status: Published
+  topics:
+  - communications
+  - computing
+  paper_url: https://doi.org/10.1109/eitce70137.2026.11634369
+  paper_label: Paper
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://api.crossref.org/works/10.1109/eitce70137.2026.11634369
+- id: pwoa
+  title: A Polynomial-Decay and Pinhole-Imaging Whale Optimization Algorithm for UAV Relay Communication Deployment
+  authors:
+  - Zhenhong Peng
+  - Junhao Wei
+  - Baili Lu
+  - Yanxiao Li
+  - Yifu Zhao
+  - Haochen Li
+  - Dexing Yao
+  - Sio-Kei Im
+  - Xu Yang
+  - Yapeng Wang
+  year: 2026
+  venue: EITCE 2026
+  status: Published
+  topics:
+  - communications
+  - computing
+  paper_url: https://doi.org/10.1109/eitce70137.2026.11634462
+  paper_label: Paper
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://api.crossref.org/works/10.1109/eitce70137.2026.11634462
+  - https://arxiv.org/abs/2606.13208
+  preprint_url: https://arxiv.org/abs/2606.13208
+- id: glnwoa
+  title: An Enhanced Whale Optimization Algorithm with Log-Normal Distribution for Optimizing Coverage of Wireless
+    Sensor Networks
+  authors:
+  - Junhao Wei
+  - Yanzhao Gu
+  - Ran Zhang
+  - Yanxiao Li
+  - Wenxuan Zhu
+  - Jinhong Song
+  - Yapeng Wang
+  - Xu Yang
+  - Ngai Cheong
+  year: 2026
+  venue: AIIPCC 2025
+  status: Published
+  topics:
+  - communications
+  - computing
+  paper_url: https://doi.org/10.30420/566698021
+  paper_label: Preprint
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://arxiv.org/abs/2511.15970
+  - https://research.mpu.edu.mo/en/publications/an-enhanced-whale-optimization-algorithm-with-log-normal-distribu/
+- id: la-bhh
+  title: Landscape-Aware Bandit Hyper-Heuristics for Online Operator Selection in UAV Inspection Routing
+  authors:
+  - Junhao Wei
+  - Yanxiao Li
+  - Yifu Zhao
+  - Qibin He
+  - Haochen Li
+  - Dexing Yao
+  - Baili Lu
+  - Zhenhong Peng
+  - Yapeng Wang
+  - Sio-Kei Im
+  - Xu Yang
+  year: 2026
+  venue: IJCAI-LEAD 2026 Workshop
+  status: Accepted
+  topics:
+  - aerial
+  - computing
+  paper_url: https://arxiv.org/abs/2605.14620
+  paper_label: Preprint
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://arxiv.org/abs/2605.14620
+  - https://2026.ijcai.org/accepted-workshops/
+- id: washh
+  title: 'WASHH: An Anchor-Aware Whale-Guided Selection Hyper-Heuristic for Continuous Optimization and SVC Configuration'
+  authors:
+  - Yifu Zhao
+  - Xiaofan Zou
+  - Junhao Wei
+  - Yanxiao Li
+  - Baili Lu
+  - Zhenhong Peng
+  - Dexing Yao
+  - Haochen Li
+  - Qinbin He
+  - Sio-Kei Im
+  - Xu Yang
+  - Yapeng Wang
+  year: 2026
+  venue: IJCAI-LEAD 2026 Workshop
+  status: Accepted
+  topics:
+  - computing
+  paper_url: https://arxiv.org/abs/2605.28844
+  paper_label: Preprint
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://arxiv.org/abs/2605.28844
+  - https://2026.ijcai.org/accepted-workshops/
+- id: low-cost-labels
+  title: 'Low-Cost Labels, Reliable Choices: Rollout-Calibrated Hyper-Heuristics for Job Shop Scheduling'
+  authors:
+  - Junhao Wei
+  - Yanxiao Li
+  - Yifu Zhao
+  - Zhenhong Peng
+  - Baili Lu
+  - Dexing Yao
+  - Haochen Li
+  - Qinbin He
+  - Sio-Kei Im
+  - Yapeng Wang
+  - Xu Yang
+  year: 2026
+  venue: IJCAI-LEAD 2026 Workshop
+  status: Accepted
+  topics:
+  - computing
+  paper_url: https://arxiv.org/abs/2605.23957
+  paper_label: Preprint
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://arxiv.org/abs/2605.23957
+  - https://2026.ijcai.org/accepted-workshops/
+- id: sehho-cobl
+  title: 'SEHHO-COBL: An Enhanced Harris Hawks Optimization with History-Guided Adaptive Parameter Memory and Chaotic
+    Opposition-Based Learning for Numerical and Engineering Optimization'
+  authors:
+  - Yanxiao Li
+  - Junhao Wei
+  - Yifu Zhao
+  - Zikun Li
+  - Baili Lu
+  - Sio-Kei Im
+  - Xu Yang
+  - Ka-Hou Chan
+  - Yapeng Wang
+  year: 2026
+  venue: Scientific Reports
+  status: Accepted
+  topics:
+  - computing
+  paper_url: https://doi.org/10.21203/rs.3.rs-9253908/v1
+  paper_label: Preprint
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://api.crossref.org/works/10.21203/rs.3.rs-9253908/v1
+- id: geometric-woa
+  title: A Geometric Whale Optimization Algorithm with Triangular Flight for Numerical Optimization and Engineering
+    Design
+  authors:
+  - Junhao Wei
+  - Ran Zhang
+  - Yanzhao Gu
+  - Wenxuan Zhu
+  - Yanxiao Li
+  - Zikun Li
+  - Shuai Wu
+  - Zhiwen Wang
+  - Ngai Cheong
+  - Sio-Kei Im
+  - Yapeng Wang
+  - Xu Yang
+  year: 2026
+  venue: Scientific Reports
+  status: Published
+  topics:
+  - computing
+  paper_url: https://doi.org/10.1038/s41598-026-37387-0
+  paper_label: Paper
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://api.crossref.org/works/10.1038/s41598-026-37387-0
+- id: askssa-cnn-bilstm
+  title: 'ASKSSA-CNN-BiLSTM: A Novel Time Series Forecasting Model for Stock Price Prediction Based on An Enhanced
+    Sparrow Search Algorithm'
+  authors:
+  - Zikun Li
+  - Wenxuan Zhu
+  - Ran Zhang
+  - Yanzhao Gu
+  - Jinhong Song
+  - Yanxiao Li
+  - Yapeng Wang
+  - Yifu Zhao
+  - Qingyang Xu
+  - Zhiwen Wang
+  - Xu Yang
+  - Junhao Wei
+  year: 2026
+  venue: ACIE 2026
+  status: Published
+  topics:
+  - computing
+  paper_url: https://doi.org/10.23919/aciecps00006.2026.00010
+  paper_label: Paper
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://api.crossref.org/works/10.23919/aciecps00006.2026.00010
+- id: nawoa-xgboost
+  title: 'NAWOA-XGBoost: A Novel Model for Early Prediction of Academic Potential in Computer Science Students'
+  authors:
+  - Junhao Wei
+  - Yanzhao Gu
+  - Ran Zhang
+  - Mingjing Huang
+  - Jinhong Song
+  - Yanxiao Li
+  - Wenxuan Zhu
+  - Yapeng Wang
+  - Zikun Li
+  - Zhiwen Wang
+  - Xu Yang
+  - Ngai Cheong
+  year: 2026
+  venue: ACIE 2026
+  status: Published
+  topics:
+  - computing
+  paper_url: https://doi.org/10.23919/aciecps00006.2026.00017
+  paper_label: Paper
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://api.crossref.org/works/10.23919/aciecps00006.2026.00017
+  - https://arxiv.org/abs/2512.04751
+  preprint_url: https://arxiv.org/abs/2512.04751
+- id: cicdwoa
+  title: 'CICDWOA: A Collective Cognitive Sharing Whale Optimization Algorithm with Cauchy Inverse Cumulative Distribution
+    for 2D/3D Path Planning and Engineering Design Problems'
+  authors:
+  - Junhao Wei
+  - Yanxiao Li
+  - Seyedali Mirjalili
+  - Dexing Yao
+  - Yifu Zhao
+  - Haochen Li
+  - Xudong Ye
+  - Zikun Li
+  - Qingyang Xu
+  - Baili Lu
+  - Ngai Cheong
+  - Dengcheng Yang
+  - Sio-Kei Im
+  - Yapeng Wang
+  - Xu Yang
+  year: 2026
+  venue: arXiv
+  status: Preprint
+  topics:
+  - computing
+  - aerial
+  paper_url: https://arxiv.org/abs/2603.20501
+  paper_label: Preprint
+  source:
+  - https://arxiv.org/abs/2603.20501
+- id: uav-audition
+  title: Real-Validated UAV Audition Under Rotor Ego-Noise for Low-False-Alarm Human Detection
+  authors:
+  - Junhao Wei
+  - Haochen Li
+  - Dexing Yao
+  - Yanxiao Li
+  - Yifu Zhao
+  - Baili Lu
+  - Zhenhong Peng
+  - Ngai Cheong
+  - Xu Yang
+  - Yapeng Wang
+  year: 2026
+  venue: arXiv
+  status: Preprint
+  topics:
+  - aerial
+  paper_url: https://arxiv.org/abs/2609.22830
+  paper_label: Preprint
+  source:
+  - https://arxiv.org/abs/2609.22830
+- id: channel-graph-detector
+  title: Benchmarking Inductive Biases for Multivariate Time-Series Anomaly Detection with a Robust Multi-View Channel-Graph
+    Detector
+  authors:
+  - Junhao Wei
+  - Yanxiao Li
+  - Bidong Chen
+  - Yifu Zhao
+  - Haochen Li
+  - Dexing Yao
+  - Baili Lu
+  - Xudong Ye
+  - Jietian Feng
+  - Sio-Kei Im
+  - Yapeng Wang
+  - Xu Yang
+  year: 2026
+  venue: arXiv
+  status: Preprint
+  topics:
+  - computing
+  paper_url: https://arxiv.org/abs/2605.28103
+  paper_label: Preprint
+  source:
+  - https://arxiv.org/abs/2605.28103
+- id: geossa
+  title: 'GeoSSA: Geometric Sparrow Search Algorithm for UAV Path Planning and Engineering Design Optimization'
+  authors:
+  - Junhao Wei
+  - Wenxuan Zhu
+  - Qingyang Xu
+  - Yanxiao Li
+  - Yifu Zhao
+  - Zikun Li
+  - Ran Zhang
+  - Yanzhao Gu
+  - Jinhong Song
+  - Yapeng Wang
+  - Zhiwen Wang
+  - Ngai Cheong
+  - Sio-Kei Im
+  - Xu Yang
+  year: 2026
+  venue: arXiv
+  status: Preprint
+  topics:
+  - aerial
+  - computing
+  paper_url: https://arxiv.org/abs/2601.19346
+  paper_label: Preprint
+  source:
+  - https://arxiv.org/abs/2601.19346
+- id: fleetguard
+  title: FleetGuard:Identity-Capped Conformal Risk Allocation for Reliable UAV Edge-Cloud Offloading
+  authors:
+  - Junhao Wei
+  - Haochen Li
+  - Yifu Zhao
+  - Yanxiao Li
+  - Dexing Yao
+  - Baili Lu
+  - Ngai Cheong
+  - Sio-Kei Im
+  - Xu Yang
+  - Yapeng Wang
+  year: 2026
+  venue: arXiv
+  status: Preprint
+  topics:
+  - communications
+  - computing
+  paper_url: https://arxiv.org/abs/2610.18003
+  paper_label: Preprint
+  source:
+  - https://arxiv.org/abs/2610.18003
+- id: honestaffinity
+  title: 'HonestAffinity: Leak-Aware Evaluation of Protein and Pocket Priors for Binding Affinity Prediction'
+  authors:
+  - Junhao Wei
+  - Baili Lu
+  - Zhenhong Peng
+  - Wanyan Li
+  - Zhirong Huang
+  - Yanxiao Li
+  - Yifu Zhao
+  - Dexing Yao
+  - Haochen Li
+  - Xudong Ye
+  - Sio-Kei Im
+  - Yapeng Wang
+  - Xu Yang
+  year: 2026
+  venue: arXiv
+  status: Preprint
+  topics:
+  - computing
+  paper_url: https://arxiv.org/abs/2606.03422
+  paper_label: Preprint
+  source:
+  - https://arxiv.org/abs/2606.03422
+- id: aerotsboost
+  title: 'AeroTSBoost: Temporal-Statistical Boosting for Real-World UAV Telemetry Anomaly Mining'
+  authors:
+  - Junhao Wei
+  - Haochen Li
+  - Yanxiao Li
+  - Yifu Zhao
+  - Dexing Yao
+  - Baili Lu
+  - Xudong Ye
+  - Sio-Kei Im
+  - Yapeng Wang
+  - Xu Yang
+  year: 2026
+  venue: arXiv
+  status: Preprint
+  topics:
+  - aerial
+  - computing
+  paper_url: https://arxiv.org/abs/2605.25639
+  paper_label: Preprint
+  source:
+  - https://arxiv.org/abs/2605.25639
+- id: llm-writing-assessment
+  title: 'LLM-Assisted Scoring for College English Writing Assessment: Statistical Calibration Against Teacher Standards'
+  authors:
+  - Yongping Wang
+  - Ning Liu
+  - Xizhi Chu
+  - Tuo Wang
+  - Xuan Cheng
+  - Yapeng Wang
+  year: 2026
+  venue: Mathematics
+  status: Published
+  topics:
+  - computing
+  paper_url: https://doi.org/10.3390/math14173033
+  paper_label: Paper
+  source:
+  - https://api.crossref.org/works/10.3390/math14173033
+- id: aries-mission
+  title: 'ARIES-Mission: A Vision-Language System for Efficient UAV Mission Generation'
+  authors:
+  - Junhao Wei
+  - Haochen Li
+  - Yifu Zhao
+  - Dexing Yao
+  - Yanxiao Li
+  - Baili Lu
+  - Sio-Kei Im
+  - Xu Yang
+  - Yapeng Wang
+  year: 2026
+  venue: Research Square
+  status: Preprint
+  topics:
+  - aerial
+  - embodied
+  paper_url: https://doi.org/10.21203/rs.3.rs-10372117/v1
+  paper_label: Preprint
+  source:
+  - https://api.crossref.org/works/10.21203/rs.3.rs-10372117/v1
+- id: mobi-depth
+  title: 'MOBI Depth: Monocular Depth Plane Decomposition Based Sparse-to-Dense Binocular Depth Estimation'
+  authors:
+  - Qibin He
+  - Yanming Chai
+  - Haochen Li
+  - Yanxiao Li
+  - Junhao Wei
+  - Dexing Yao
+  - Yifu Zhao
+  - Ka-Hou Chan
+  - Sio-Kei Im
+  - Yapeng Wang
+  year: 2026
+  venue: Research Square
+  status: Preprint
+  topics:
+  - aerial
+  - manipulation
+  paper_url: https://doi.org/10.21203/rs.3.rs-9593902/v1
+  paper_label: Preprint
+  source:
+  - https://api.crossref.org/works/10.21203/rs.3.rs-9593902/v1
+- id: pamk-thymic-necroptosis
+  title: Structural characterization of PAMK and its protective effect against thymic necroptosis in goslings
+  authors:
+  - Wanyan Li
+  - Baili Lu
+  - Xiangying Zhou
+  - Shirou Pan
+  - Junhao Wei
+  - Bingxin Li
+  - Nan Cao
+  - Yunmao Huang
+  - Wenjun Liu
+  - Xinliang Fu
+  - Yunbo Tian
+  - Danning Xu
+  year: 2026
+  venue: Veterinary Quarterly
+  status: Published
+  topics: []
+  paper_url: https://doi.org/10.1080/01652176.2026.2695104
+  paper_label: Paper
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://api.crossref.org/works/10.1080/01652176.2026.2695104
+- id: att-bilstm-xgboost
+  title: 'ATT-BiLSTM-XGBoost: A Hybrid Deep Learning Model for EEG-Based Classification of Alzheimer''s Disease
+    and Frontotemporal Dementia'
+  authors:
+  - Yanzhao Gu
+  - Wenxuan Zhu
+  - Junhao Wei
+  - Ngai Cheong
+  - Ying Chen
+  year: 2025
+  venue: EISP 2025
+  status: Published
+  topics:
+  - computing
+  paper_url: https://doi.org/10.1109/eisp70220.2025.00012
+  paper_label: Paper
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://api.crossref.org/works/10.1109/eisp70220.2025.00012
+- id: lswoa
+  title: 'LSWOA: An enhanced whale optimization algorithm with Levy flight and Spiral flight for numerical and engineering
+    design optimization problems'
+  authors:
+  - Junhao Wei
+  - Yanzhao Gu
+  - Zhanxi Xie
+  - Yuzheng Yan
+  - Baili Lu
+  - Zikun Li
+  - Ngai Cheong
+  - Jiafeng Zhang
+  - Song Zhang
+  year: 2025
+  venue: PLOS One
+  status: Published
+  topics:
+  - computing
+  paper_url: https://doi.org/10.1371/journal.pone.0322058
+  paper_label: Paper
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://api.crossref.org/works/10.1371/journal.pone.0322058
+- id: gwoa
+  title: 'GWOA: A multi-strategy enhanced whale optimization algorithm for engineering design optimization'
+  authors:
+  - Yanzhao Gu
+  - Junhao Wei
+  - Zikun Li
+  - Baili Lu
+  - Shirou Pan
+  - Ngai Cheong
+  year: 2025
+  venue: PLOS One
+  status: Published
+  topics:
+  - computing
+  paper_url: https://doi.org/10.1371/journal.pone.0322494
+  paper_label: Paper
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://api.crossref.org/works/10.1371/journal.pone.0322494
+- id: mrbmo
+  title: 'MRBMO: An Enhanced Red-Billed Blue Magpie Optimization Algorithm for Solving Numerical Optimization Challenges'
+  authors:
+  - Baili Lu
+  - Zhanxi Xie
+  - Junhao Wei
+  - Yanzhao Gu
+  - Yuzheng Yan
+  - Zikun Li
+  - Shirou Pan
+  - Ngai Cheong
+  - Ying Chen
+  - Ruishen Zhou
+  year: 2025
+  venue: Symmetry
+  status: Published
+  topics:
+  - computing
+  paper_url: https://doi.org/10.3390/sym17081295
+  paper_label: Paper
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://api.crossref.org/works/10.3390/sym17081295
+- id: rwoa
+  title: 'RWOA: A novel enhanced whale optimization algorithm with multi-strategy for numerical optimization and
+    engineering design problems'
+  authors:
+  - Junhao Wei
+  - Yanzhao Gu
+  - Baili Lu
+  - Ngai Cheong
+  year: 2025
+  venue: PLOS One
+  status: Published
+  topics:
+  - computing
+  paper_url: https://doi.org/10.1371/journal.pone.0320913
+  paper_label: Paper
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://api.crossref.org/works/10.1371/journal.pone.0320913
+- id: lsewoa
+  title: 'LSEWOA: An Enhanced Whale Optimization Algorithm with Multi-Strategy for Numerical and Engineering Design
+    Optimization Problems'
+  authors:
+  - Junhao Wei
+  - Yanzhao Gu
+  - Yuzheng Yan
+  - Zikun Li
+  - Baili Lu
+  - Shirou Pan
+  - Ngai Cheong
+  year: 2025
+  venue: Sensors
+  status: Published
+  topics:
+  - computing
+  paper_url: https://doi.org/10.3390/s25072054
+  paper_label: Paper
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://api.crossref.org/works/10.3390/s25072054
+- id: tswoa
+  title: 'TSWOA: An Enhanced WOA with Triangular Walk and Spiral Flight for Engineering Design Optimization'
+  authors:
+  - Junhao Wei
+  - Yanzhao Gu
+  - Yuzheng Yan
+  - Yapeng Wang
+  - Zikun Li
+  - Baili Lu
+  - Shirou Pan
+  - Ngai Cheong
+  year: 2025
+  venue: ICAACE 2025
+  status: Published
+  topics:
+  - computing
+  paper_url: https://doi.org/10.1109/icaace65325.2025.11020347
+  paper_label: Paper
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://api.crossref.org/works/10.1109/icaace65325.2025.11020347
+- id: uav-public-administration
+  title: 'Research on UAV Applications in Public Administration: Based on an Improved RRT Algorithm'
+  authors:
+  - Zhanxi Xie
+  - Baili Lu
+  - Yanzhao Gu
+  - Zikun Li
+  - Junhao Wei
+  - Ngai Cheong
+  year: 2025
+  venue: arXiv
+  status: Preprint
+  topics:
+  - aerial
+  paper_url: https://arxiv.org/abs/2508.14096
+  paper_label: Preprint
+  source:
+  - https://arxiv.org/abs/2508.14096
+- id: pamk-hepatoprotection
+  title: Comparative hepatoprotective effects of AMK and PAMK via Nrf2 signaling in broiler breeders
+  authors:
+  - Baili Lu
+  - Jiayu He
+  - Shirou Pan
+  - Junhao Wei
+  - Bingxin Li
+  - Nan Cao
+  - Yunmao Huang
+  - Yunbo Tian
+  - Ngai Cheong
+  - Ying Chen
+  - Danning Xu
+  - Wanyan Li
+  year: 2025
+  venue: Frontiers in Veterinary Science
+  status: Published
+  topics: []
+  paper_url: https://doi.org/10.3389/fvets.2025.1672417
+  paper_label: Paper
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://api.crossref.org/works/10.3389/fvets.2025.1672417
+- id: pamk-intestinal-injury
+  title: Protection of LPS-induced intestinal injury in goslings by polysaccharide of Atractylodes macrocephala
+    Koidz based on 16S rRNA and metabolomics analysis
+  authors:
+  - Wanyan Li
+  - Baili Lu
+  - Shirou Pan
+  - Shuaifei Bai
+  - Jiayu He
+  - Bingxin Li
+  - Nan Cao
+  - Xinliang Fu
+  - Junhao Wei
+  - Ying Chen
+  - Yunmao Huang
+  - Yunbo Tian
+  - Danning Xu
+  year: 2025
+  venue: PLOS One
+  status: Published
+  topics: []
+  paper_url: https://doi.org/10.1371/journal.pone.0326164
+  paper_label: Paper
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://api.crossref.org/works/10.1371/journal.pone.0326164
+- id: adaptive-pso
+  title: Adaptive Position Updating Particle Swarm Optimization for UAV Path Planning
+  authors:
+  - Junhao Wei
+  - Yanzhao Gu
+  - K. L. Eddie Law
+  - Ngai Cheong
+  year: 2024
+  venue: WiOpt 2024 · ISAC Workshop
+  status: Published
+  topics:
+  - aerial
+  - computing
+  paper_url: https://dl.ifip.org/db/conf/wiopt2024/wiopt2024/1571043098.pdf
+  paper_label: Paper
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://dl.ifip.org/db/conf/wiopt2024/wiopt2024/1571043098.pdf
+- id: credit-card-fraud
+  title: Credit Card Fraud Detection Based on MiniKM-SVMSMOTE-XGBoost Model
+  authors:
+  - Yanzhao Gu
+  - Junhao Wei
+  - Ngai Cheong
+  year: 2024
+  venue: BDIOT 2024
+  status: Published
+  topics:
+  - computing
+  paper_url: https://doi.org/10.1145/3697355.3697397
+  paper_label: Paper
+  source:
+  - https://junhaowei-mpu.github.io/
+  - https://api.crossref.org/works/10.1145/3697355.3697397

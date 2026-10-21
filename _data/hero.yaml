@@ -1,11 +1,11 @@
-- image: /assets/images/platforms/chironix-demonstration.webp
-  width: 1355
-  height: 895
-  alt: Chironix X1 mobile dual-arm robot at a live demonstration
 - image: /assets/images/platforms/uav-demonstration.webp
   width: 1467
   height: 1100
   alt: A UAV research presentation at Macao Polytechnic University
+- image: /assets/images/platforms/chironix-demonstration.webp
+  width: 1355
+  height: 895
+  alt: Chironix X1 mobile dual-arm robot at a live demonstration
 - image: /assets/images/platforms/open-day.webp
   width: 1600
   height: 1200

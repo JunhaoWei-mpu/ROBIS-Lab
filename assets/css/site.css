@@ -442,9 +442,6 @@ button {
   grid-template-columns: 1fr 1fr;
   gap: 23px 32px;
 }
-.research-area-list > :last-child:nth-child(odd) {
-  grid-column: 1 / -1;
-}
 .research-area-list h3 {
   font-size: 17px;
   line-height: 1.45;
@@ -2303,4 +2300,20 @@ button {
 }
 .hero-controls button:hover {
   text-decoration: underline;
+}
+
+.footer-brands {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-bottom: 16px;
+}
+.footer-brands a { display: block; }
+.footer-brands .footer-logo { width: 170px; height: auto; margin: 0; }
+.footer-brands .mpu-logo { width: 175px; height: auto; margin: 0; }
+@media (max-width: 600px) {
+  .footer-brands { gap: 18px; }
+  .footer-brands .footer-logo { width: 145px; }
+  .footer-brands .mpu-logo { width: 145px; }
 }

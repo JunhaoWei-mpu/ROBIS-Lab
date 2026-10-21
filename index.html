@@ -12,8 +12,7 @@ featured_projects:
   <section class="lab-introduction" aria-labelledby="lab-title">
     <div class="lab-introduction-copy">
       <h1 id="lab-title">Robotics and Intelligent Systems Lab</h1>
-      <p><strong>ROBIS Lab</strong> studies autonomous robots and intelligent computational methods. Our research covers UAV navigation and mission planning, robotic manipulation, vision–language–action systems, optimization, and UAV communications.</p>
-      <p>We work on perception, planning, and decision-making, using aerial and mobile robotic platforms to study these methods in physical systems.</p>
+      <p>The Robotics and Intelligent Systems Lab (ROBIS) is based at Macao Polytechnic University. Our research focuses on autonomous aerial systems, robotic manipulation, embodied intelligence, intelligent optimization, and UAV communications. We develop methods for perception, planning, and decision-making, and study their use on aerial and mobile robots.</p>
       <div class="introduction-links">
         <a href="{{ '/research/' | relative_url }}">Explore Research</a>
         <a href="{{ '/people/' | relative_url }}">Meet the Team</a>
@@ -70,7 +69,7 @@ featured_projects:
         <div class="academic-section-heading"><h2 id="people-title">People</h2></div>
         {% assign groups = 'Supervisors,Research Students' | split: ',' %}{% for group in groups %}
         <h3 class="home-people-group">{{ group }}</h3>
-        <ul class="home-member-list">{% assign members = site.members | where: 'group', group | sort: 'order' %}{% for member in members %}<li><a href="{{ member.url | relative_url }}">{{ member.name }}</a></li>{% endfor %}</ul>
+        <ul class="home-member-list">{% assign members = site.members | where: 'group', group | sort: 'order' %}{% assign home_limit = 3 %}{% if group == 'Research Students' %}{% assign home_limit = 4 %}{% endif %}{% for member in members limit:home_limit %}<li><a href="{{ member.url | relative_url }}">{{ member.name }}</a></li>{% endfor %}</ul>
         {% endfor %}
         <a class="directory-link" href="{{ '/people/' | relative_url }}">View all members</a>
       </section>

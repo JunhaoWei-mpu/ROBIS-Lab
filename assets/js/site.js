@@ -44,14 +44,12 @@ if (filterForm) {
     const words = search.value
       .trim()
       .toLocaleLowerCase()
-      .split(/\s+/)
-      .filter(Boolean);
+      .match(/[\p{L}\p{N}]+/gu) || [];
     let visible = 0;
     publications.forEach((item) => {
+      const tokens = item.textContent.toLocaleLowerCase().match(/[\p{L}\p{N}]+/gu) || [];
       const matches =
-        words.every((word) =>
-          item.textContent.toLocaleLowerCase().includes(word),
-        ) &&
+        words.every((word) => tokens.some((token) => token.startsWith(word))) &&
         (topic.value === "all" ||
           item.dataset.topics.split(" ").includes(topic.value));
       item.hidden = !matches;
@@ -95,7 +93,6 @@ if (heroCarousel) {
   const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
   let current = 0;
   let paused = reducedMotion.matches;
-  let interacting = false;
   let timer;
   const schedule = () => {
     clearInterval(timer);
@@ -104,7 +101,7 @@ if (heroCarousel) {
       "aria-label",
       paused ? "Start image rotation" : "Pause image rotation",
     );
-    if (!paused && !interacting && !document.hidden)
+    if (!paused && !document.hidden)
       timer = setInterval(() => show((current + 1) % slides.length), 5000);
   };
   const show = async (index) => {
@@ -126,22 +123,6 @@ if (heroCarousel) {
   });
   nextButton.addEventListener("click", () => {
     show((current + 1) % slides.length);
-    schedule();
-  });
-  heroCarousel.addEventListener("mouseenter", () => {
-    interacting = true;
-    schedule();
-  });
-  heroCarousel.addEventListener("mouseleave", () => {
-    interacting = heroCarousel.contains(document.activeElement);
-    schedule();
-  });
-  heroCarousel.addEventListener("focusin", () => {
-    interacting = true;
-    schedule();
-  });
-  heroCarousel.addEventListener("focusout", (event) => {
-    interacting = heroCarousel.contains(event.relatedTarget);
     schedule();
   });
   reducedMotion.addEventListener("change", () => {

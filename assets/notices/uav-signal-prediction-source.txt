@@ -1,0 +1,9 @@
+Figure 6 from:
+Long Liu, Yapeng Wang, Xu Yang, Sio-Kei Im, Xuan Cheng, Lu Huang, Jiaqi Chen, and Heng Guan.
+Research on UAV 3D Airspace Signal Strength Prediction Based on Physical Perception Feature Engineering.
+Mathematics 14(8), 1399 (2026). DOI: 10.3390/math14081399
+https://www.mdpi.com/2227-7390/14/8/1399
+Original: https://pub.mdpi-res.com/mathematics/mathematics-14-01399/article_deploy/html/images/mathematics-14-01399-g006.png
+License: Creative Commons Attribution 4.0, https://creativecommons.org/licenses/by/4.0/
+Used as an illustration of UAV radio signal prediction. Full figure preserved; lossless geometry, WebP compression only.
+Retrieved 2026-10-21.

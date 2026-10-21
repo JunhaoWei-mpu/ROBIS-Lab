@@ -5,7 +5,6 @@
 <a href="{{ include.member.url | relative_url }}">{{ include.member.name }}</a>
 </h3>
 <p class="person-role">{{ include.member.role }}</p>
-{% unless include.member.institution == 'Macao Polytechnic University' %}<p class="person-institution">{{ include.member.institution }}</p>{% endunless %}
 <ul class="person-interests">{% for interest in include.member.interests %}<li>{{ interest }}</li>{% endfor %}</ul>
 <div class="text-links">
 <a href="{{ include.member.url | relative_url }}">Profile <span aria-hidden="true">→</span>

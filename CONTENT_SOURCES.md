@@ -101,3 +101,19 @@
 - 展示1.jpg / 展示1.png 内容一致，采用 JPEG 源图；openday.png 与 ways.png 已逐一实际查看。首页按作者要求与 jqr2 轮换，未为照片虚构新闻日期。
 - 人员研究兴趣由作者提供简介拆为分点列表，未增加未经提供的能力。新增 UAV Communications and Networked Systems 来自 Long Liu / Xuan Cheng 的已给方向；角色与机构维持已确认事实。
 - 依作者最新要求：导航字体恢复与正文一致；Research 去掉小标题、People 名单、资源列表及图下说明；删除 CAST 新闻和 Member update 链接标签，新闻使用 🎉。
+
+
+## 2026-10-21：学生论文补齐与本轮展示调整
+
+- 论文范围按作者要求：收录研究生署名的公开论文，允许其导师共同署名；不导入导师个人论文全集。现有 **42 条去重记录**，每条均有 `source`，作者、年份、venue 和状态集中维护于 `_data/publications.yaml`。
+- 主来源为 Junhao Wei 当前个人主页（27 条），以 DOI/Crossref 登记的完整标题和作者逐条匹配；拒绝仅关键词近似的 Crossref 搜索结果。arXiv 作者 API 的完整作者列表补充了 8 条未列主页的 MPU 合作论文，三条同名但不属于此合作网络的作者记录未收录。
+- Xuan Cheng 的 ORCID `0009-0004-3137-6649` 由 IEEE Access 论文作者元数据关联，补充 Ad Hoc Networks 和 Mathematics 论文；Long Liu 的 UAV 信号强度论文由 MDPI 原文核对。IEEE Access 论文 DOI 为 `10.1109/ACCESS.2026.3670819`，MPU 官方研究档案进一步确认作者与出版状态。
+- 另外补充 Research Square 的 ARIES-Mission (`10.21203/rs.3.rs-10372117/v1`)、MOBI Depth (`10.21203/rs.3.rs-9593902/v1`)，以及 Elsevier 正式页面的 RAWA-RHP (`10.1016/j.rineng.2026.113481`)。Research Square/arXiv 原稿没有录用证明时标为 Preprint。
+- RAWA-RHP 正式页面为 Journal Pre-proof，标记 In press。Ad Hoc Networks 无线电地图论文的官方书目年为 **2027**（volume 194, 104392），保留原年份并标为 In press，不擅自把计划卷期改成 2026。
+- LEAD 是 IJCAI-ECAI 2026 的 Learning-assisted Algorithm Design **Workshop**，已根据 https://2026.ijcai.org/accepted-workshops/ 明确标注，不作为 IJCAI 主会。
+- WiOpt 2024 的 Adaptive PSO 使用 IFIP 官方 PDF，注明 ISAC Workshop。正式论文与其预印本合并为一条；两种链接均存在时分别显示 Paper / Preprint。
+- Google Scholar 公开列表返回 429；DBLP XML 请求返回访问检查页，因此不声称已完整读取这两个个人目录。Google 检索用于发现，收录事实依赖作者主页、arXiv、出版机构、MPU 或 DOI 原始登记。
+- 通讯方向图使用 Long Liu 等人 Mathematics 14(8), 1399 的 Figure 6，完整保留三组空域信号强度图，仅转为 WebP。CC BY 4.0 来源及许可见 `assets/notices/uav-signal-prediction-source.txt`；VLA 方向使用作者最新的 UAV3 平台照片。
+- 首页研究区域第五项与其他项等宽；首页仅显示四位研究生，People 保留全部 11 位成员。头像卡片不再显示任何学校名；Dexing 的真实机构仍保留在个人资料及完整简介中。
+- 首页简介参考 HyperSec 的机构与研究范围表达方式重新撰写，使用普通正文。Research 页首简介按作者要求移除。页脚 MPU 与 ROBIS 标识并排。
+- 首页轮播顺序改为 展示1 → 机器人展示(jqr2) → Open day → WAYS。取消鼠标悬停和控件焦点导致的隐式暂停；保留 Pause/Play、Next、后台标签暂停及系统减少动态效果支持。

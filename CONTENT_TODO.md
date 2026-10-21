@@ -12,3 +12,8 @@ Jiangyu Lai 的简介与 `jiangyu.png` 已由作者补充，已完成对应并�
 2026-10-21 已确认：导师顺序 Yapeng Wang → Yuhuan Lu → Erli Lyu；Long Liu、Xuan Cheng 为博士生；Yuhuan Lu、Dexing Yao 新照片已对应；Contact 为 yapengwang@mpu.edu.mo；学院组合 logo 使用作者提供的 fca.png。
 
 Yuhuan Lu 的学校职称已由作者明确确认为 Assistant Professor，人员列表和完整简介已同步，不再待确认。Contact 区块已按作者要求移除机构和地点三行。
+
+
+## 论文目录的检索边界
+
+2026-10-21 已补齐 42 条有公开依据的学生署名记录。Jiangyu Lai 本轮尚未检索到能确认身份的公开论文，不把同名作者的论文套用到成员。主页 News 中尚未公开完整标题/作者的录用批次不凭数量虚构条目；后续取得题名和真实论文链接即可继续补充。Google Scholar 的 429 访问限制不影响已核实条目的发布。
