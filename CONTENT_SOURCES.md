@@ -117,3 +117,5 @@
 - 首页研究区域第五项与其他项等宽；首页仅显示四位研究生，People 保留全部 11 位成员。头像卡片不再显示任何学校名；Dexing 的真实机构仍保留在个人资料及完整简介中。
 - 首页简介参考 HyperSec 的机构与研究范围表达方式重新撰写，使用普通正文。Research 页首简介按作者要求移除。页脚 MPU 与 ROBIS 标识并排。
 - 首页轮播顺序改为 展示1 → 机器人展示(jqr2) → Open day → WAYS。取消鼠标悬停和控件焦点导致的隐式暂停；保留 Pause/Play、Next、后台标签暂停及系统减少动态效果支持。
+
+2026-10-21 作者补充确认：Real-Validated UAV Audition Under Rotor Ego-Noise for Low-False-Alarm Human Detection 录用于 NCMMSC 2026；其 venue 已从 arXiv 改为 NCMMSC 2026、status 改为 Accepted，原 arXiv 链接仍作为 Preprint。
