@@ -94,6 +94,9 @@ if (heroCarousel) {
   let current = 0;
   let paused = reducedMotion.matches;
   let timer;
+  const preloadNext = () => {
+    slides[(current + 1) % slides.length].loading = "eager";
+  };
   const schedule = () => {
     clearInterval(timer);
     pauseButton.textContent = paused ? "Play" : "Pause";
@@ -116,6 +119,7 @@ if (heroCarousel) {
     });
     current = index;
     counter.textContent = `${index + 1} / ${slides.length}`;
+    preloadNext();
   };
   pauseButton.addEventListener("click", () => {
     paused = !paused;
@@ -131,5 +135,6 @@ if (heroCarousel) {
   });
   document.addEventListener("visibilitychange", schedule);
   controls.hidden = slides.length < 2;
+  preloadNext();
   schedule();
 }
