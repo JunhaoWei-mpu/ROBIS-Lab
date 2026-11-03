@@ -153,3 +153,5 @@ SAGA 详情页按作者要求移除架构图；改为并排显示作者提供的
 2026-10-21 作者要求移除全部 2025 年论文；本轮删除 ahrrt, tswoa，当前目录共 25 条，继续满足实验室一作 + 实验室导师共同署名。
 
 2026-11-03 作者补充：在 Jiangyu Lai 后加入 Liang Zhan、Liang Yu 两位 Master’s Student，兴趣采用作者给定的三条英文内容。Liang Zhan 原简介有 “holds a Master’s degree”，同时作者明确要求按硕士生加入；简介使用中性 graduate studies 表述，身份依照本轮硕士生指示。学校英文名称统一为 Macao Polytechnic University。头像映射见 ASSET_MANIFEST.md。全部成员详情页移除姓名下单独的 institution 行，履历中的教育经历不变；目前共 13 位成员。
+
+2026-11-03 作者确认：2026 年 10 月 Scientific Reports 录用数由 1 篇更正为 3 篇，并新增 IEEE MSN 2026 录用 1 篇。记录日期保持月份精度，不编造具体录用日；此轮只更新新闻，不推断未知论文题名。首页与 News 共用 `_data/news.yaml`。
