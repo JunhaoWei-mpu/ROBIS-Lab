@@ -11,7 +11,6 @@ layout: default
 <p class="eyebrow">{{ page.group }}</p>
 <h1>{{ page.name }}</h1>
 <p class="lead member-role">{{ page.role }}</p>
-<p class="affiliation">{{ page.institution }}</p>
 <div class="text-links">{% if page.homepage %}<a href="{{ page.homepage }}">Personal homepage ↗</a>{% endif %}{% if page.email %}<a href="mailto:{{ page.email }}">{{ page.email }}</a>{% endif %}{% if page.github %}<a href="{{ page.github }}">GitHub ↗</a>{% endif %}</div>
 <h2>Biography</h2>{{ content }}<h2>Research interests</h2>
 <ul class="member-interests">{% for interest in page.interests %}<li>{{ interest }}</li>{% endfor %}</ul>

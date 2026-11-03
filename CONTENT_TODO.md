@@ -2,7 +2,7 @@
 
 不影响首版使用的内容：
 
-1. **学生个人主页**：Yanxiao Li、Yifu Zhao、Haochen Li、Dexing Yao、Long Liu、Jiangyu Lai、Xuan Cheng 尚未提供核实的公开主页；当前可访问本站完整 Profile。
+1. **学生个人主页**：Yanxiao Li、Yifu Zhao、Haochen Li、Dexing Yao、Long Liu、Jiangyu Lai、Xuan Cheng、Liang Zhan、Liang Yu 尚未提供核实的公开主页；当前可访问本站完整 Profile。
 2. **可选联系信息**：如需实验室房间或统一邮箱，可后续提供；当前联系人为 Yapeng Wang，导师角色及顺序已由作者确认。
 
 Long Liu 的照片已由作者新加入的 `longliu.png` 明确对应，已替换 LL 占位。其他已展示头像均有文件名/个人页面映射，没有靠外貌推断身份。

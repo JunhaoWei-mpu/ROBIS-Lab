@@ -87,14 +87,14 @@ CSS/JS 链接带构建时间版本参数，部署后会请求新版资源。最�
 - 顶部标识采用作者提供的 `fca.png`，公开路径为 `assets/images/brand/mpu-fca-logo.png`；不再附加独立学院文字。
 - Yuhuan Lu、Dexing Yao 使用本轮本地新照片，文件名含日期避免旧图缓存；Xuan Cheng 使用 `xuancheng.jpg`。
 
-- 首页 People 覆盖导师和研究学生全部 11 人；导师顺序及学生顺序由各成员 `order` 控制，Xuan Cheng 在 Long Liu 前。
+- People 页面展示全部 13 位成员，首页展示导师和部分研究生；导师顺序及学生顺序由各成员 `order` 控制，Xuan Cheng 在 Long Liu 前，Jiangyu Lai 后依次为 Liang Zhan、Liang Yu。
 - SAGA 首页动画在 `_projects/saga.md` 的 `home_image`，`home_still` 指定减少动态效果时的静态替代。静态图取自原动画第 80 帧；原始 GIF 保留仓库外。
 - 导航与正文使用一致字体。平台/研究设备图片采用白色页面自然显示，无额外灰底。
 
 ## 最新页面维护方式
 
 - `_data/hero.yaml` 维护首页轮换照片；现为 jqr2、展示1、openday、ways。每张图填写 image / width / height / alt。五秒自动轮换，可暂停和手动切换；减少动态偏好时初始暂停。
-- `_members/*.md` 的 `interests` 现在是 YAML 列表，每个研究兴趣占一项；列表和成员详情共用。圆形头像不加描边或人工底色，MPU 学校名不在每个人下重复；不同学校保留真实机构。
+- `_members/*.md` 的 `interests` 现在是 YAML 列表，每个研究兴趣占一项；列表和成员详情共用。圆形头像不加描边或人工底色，成员卡片和详情页姓名下不单独显示学校；真实机构仍保存在 `institution` 和完整履历中。
 - 导航与正文统一为系统 Arial / Helvetica 字体，不再使用独立 Roboto。
 - Research 展示五个方向的介绍、技术重点与配图，不显示 People、相关论文/项目/平台列表或图片说明。新增 UAV Communications and Networked Systems 概括 UAV 通信、信号预测、低轨卫星/NR5G 和多无人机规划。
 - 首页研究亮点统一左图右文，不显示发表状态；完整 venue/status 在 Publications 页维护。新闻使用 🎉，来源保存在数据文件，访客页面不显示 Member update。

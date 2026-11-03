@@ -53,3 +53,12 @@
 | ways.png | 首页活动合影轮换图，不依外貌标注具体成员 | assets/images/platforms/ways.webp |
 | Manipulation.gif | Research 机械臂方向演示，完整等比编码 | assets/images/research/manipulation.webp；manipulation-still.webp |
 | Wikimedia Commons: Rastrigin function.png | 公共领域非凸函数曲面图 | assets/images/research/rastrigin-landscape.webp |
+
+## 2026-11-03 新增成员照片
+
+| 原始文件 | 人物 / 映射依据 | 网站资源 |
+|---|---|---|
+| zhanliang（JPEG，无扩展名） | Liang Zhan；作者于 2026-11-03 再次更新的照片，已重新查看并替换 | assets/images/people/liang-zhan.webp |
+| liangyu（JPEG，无扩展名） | Liang Yu；依据作者本轮姓名与对应拼音文件名，已实际查看 | assets/images/people/liang-yu.webp |
+
+原件保留在素材目录，仅等比缩放并转为 WebP；圆形显示通过现有 CSS 实现。

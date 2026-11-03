@@ -151,3 +151,5 @@ SAGA 详情页按作者要求移除架构图；改为并排显示作者提供的
 2026-10-21 作者最终收录规则：实验室成员第一作者，且至少一位列入 Supervisors 的导师共同署名（Yapeng Wang、Yuhuan Lu、Erli Lyu）。姓名比较忽略大小写，不改写来源作者列表。现有目录筛为 27 条；本轮删除 lswoa, rwoa, lsewoa, mrbmo-preprint, adaptive-pso。Platforms 页 Chironix 按钮下方整张 jqr2 展示照片已移除；jqr2 仍保留在首页轮播与 Chironix 项目详情中。
 
 2026-10-21 作者要求移除全部 2025 年论文；本轮删除 ahrrt, tswoa，当前目录共 25 条，继续满足实验室一作 + 实验室导师共同署名。
+
+2026-11-03 作者补充：在 Jiangyu Lai 后加入 Liang Zhan、Liang Yu 两位 Master’s Student，兴趣采用作者给定的三条英文内容。Liang Zhan 原简介有 “holds a Master’s degree”，同时作者明确要求按硕士生加入；简介使用中性 graduate studies 表述，身份依照本轮硕士生指示。学校英文名称统一为 Macao Polytechnic University。头像映射见 ASSET_MANIFEST.md。全部成员详情页移除姓名下单独的 institution 行，履历中的教育经历不变；目前共 13 位成员。
